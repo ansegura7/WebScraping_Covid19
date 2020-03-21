@@ -1,8 +1,12 @@
-# Graphs - Net4j
+# Graphs in ArangoDB
+Natively store data for graph, document and search needs. Utilize feature-rich access with one query language.
+
+https://www.arangodb.com/
 
 ## Python Dependencies
 ``` python
-  pip install neo4j
+  pip install pyarango
+  pip install python-arango
 ```
 
 ## Contributing and Feedback
