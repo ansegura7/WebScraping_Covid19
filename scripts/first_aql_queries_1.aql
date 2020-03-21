@@ -1,0 +1,38 @@
+FOR airport IN airports
+    FILTER airport.state == 'NY' AND airport.vip == false
+    COLLECT WITH COUNT INTO count
+    RETURN count
+
+
+FOR airport IN airports
+    FILTER airport._key == 'BIS' OR airport._key == 'DEN' OR airport._key == 'JFK'
+    RETURN { airport: airport.name }
+
+
+FOR airport IN airports
+    FILTER airport.state == 'ND'
+    RETURN airport.name
+
+
+FOR airport IN airports
+    FILTER airport.city == 'Los Angeles'
+    RETURN airport
+
+
+FOR airport IN airports
+    FILTER airport._key == 'LAX' // name == 'Los Angeles International'
+    RETURN airport
+    
+
+FOR airport IN airports
+    FILTER airport.vip
+    COLLECT WITH COUNT INTO count
+    RETURN count
+
+
+RETURN COUNT(airports)
+
+
+FOR airport IN airports
+    FILTER airport.vip == true
+    RETURN airport

@@ -1,0 +1,19 @@
+FOR airport, flight IN ANY 'airports/BIS' flights
+    FILTER flight.Month == 1
+       AND flight.Day >= 5
+       AND flight.Day <= 7
+    RETURN { city: airport.city, time: flight.ArrTimeUTC }
+
+
+FOR airport, flight IN INBOUND 'airports/BIS' flights
+    LIMIT 10
+    RETURN flight.FlightNum
+
+
+FOR airport, flight IN OUTBOUND 'airports/LAX' flights
+    LIMIT 10
+    RETURN { airport, flight }
+
+
+FOR airport IN 1..1 OUTBOUND 'airports/LAX' flights
+    RETURN DISTINCT airport.name
