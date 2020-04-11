@@ -1,3 +1,0 @@
-# The command line to execute the import is:
-arangoimport --file data\airports.csv --collection airports --create-collection true --type csv
-arangoimport --file data\flights.csv --collection flights --create-collection true --type csv --create-collection-type edge

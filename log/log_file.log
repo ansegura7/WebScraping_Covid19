@@ -1,0 +1,126 @@
+INFO:root:>> START PROGRAM: 2020-04-10 11:05:34.015281
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Save data: 210
+INFO:root:>> END PROGRAM: 2020-04-10 11:05:36.464312
+INFO:root:>> START PROGRAM: 2020-04-10 11:06:56.815747
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Save data: 210
+INFO:root:>> END PROGRAM: 2020-04-10 11:06:59.573775
+INFO:root:>> START PROGRAM: 2020-04-10 11:07:48.325532
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Save data: 210
+INFO:root:>> START PROGRAM: 2020-04-10 11:08:27.727670
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Save data: 210
+ERROR:root: - Pyodbc error: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near '-'. (102) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (8180)")
+INFO:root:>> END PROGRAM: 2020-04-10 11:08:30.588435
+INFO:root:>> START PROGRAM: 2020-04-10 12:37:05.778180
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Save data: 210
+INFO:root:>> END PROGRAM: 2020-04-10 12:37:07.743986
+INFO:root:>> START PROGRAM: 2020-04-10 12:38:36.827936
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Save data: 210
+INFO:root:>> END PROGRAM: 2020-04-10 12:38:38.685539
+INFO:root:>> START PROGRAM: 2020-04-10 12:39:58.320902
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Save data: 210
+INFO:root:>> START PROGRAM: 2020-04-10 13:01:18.341531
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 10
+INFO:root:>> END PROGRAM: 2020-04-10 13:01:20.096316
+INFO:root:>> START PROGRAM: 2020-04-10 13:04:53.347970
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 2
+INFO:root:>> END PROGRAM: 2020-04-10 13:04:55.089091
+INFO:root:>> START PROGRAM: 2020-04-10 16:09:51.474288
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 28
+INFO:root:>> END PROGRAM: 2020-04-10 16:09:53.911787
+INFO:root:>> START PROGRAM: 2020-04-10 16:18:11.523174
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 0
+INFO:root:>> END PROGRAM: 2020-04-10 16:18:13.934900
+INFO:root:>> START PROGRAM: 2020-04-10 16:23:15.525101
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-04-10 16:23:15.526123
+INFO:root:>> START PROGRAM: 2020-04-10 16:24:26.867540
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-04-10 16:24:26.868540
+INFO:root:>> START PROGRAM: 2020-04-10 16:24:38.419514
+INFO:root: - The document was read
+INFO:root: - Get data...
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 0
+INFO:root:>> END PROGRAM: 2020-04-10 16:24:40.658716
+INFO:root:>> START PROGRAM: 2020-04-10 16:39:01.742249
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 2
+INFO:root:>> END PROGRAM: 2020-04-10 16:39:03.429759
+INFO:root:>> START PROGRAM: 2020-04-10 19:58:03.780104
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 30
+INFO:root:>> END PROGRAM: 2020-04-10 19:58:06.373919
+INFO:root:>> START PROGRAM: 2020-04-11 09:24:39.510425
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 166
+INFO:root:>> END PROGRAM: 2020-04-11 09:24:41.385346
+INFO:root:>> START PROGRAM: 2020-04-11 11:14:29.697421
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 29
+INFO:root:>> END PROGRAM: 2020-04-11 11:14:31.570688
+INFO:root:>> START PROGRAM: 2020-04-11 11:26:11.751567
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 4
+INFO:root:>> END PROGRAM: 2020-04-11 11:26:14.047725
+INFO:root:>> START PROGRAM: 2020-04-11 14:28:15.725932
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 50
+INFO:root:>> END PROGRAM: 2020-04-11 14:28:19.297570
