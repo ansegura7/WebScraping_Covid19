@@ -4,6 +4,17 @@ Web scraping is the (generally automatic) process of collecting semi-structured 
 ## Motivation
 Create a web scraper bot to obtain data on confirmed cases and deaths of Covid-19, in order to analyze them.
 
+## Run Bot
+To run the web scraper bot on Windows, type the following commands (below) at the **Command Prompt** or just run the batch file **run-win.bat** (which is in the /run folder).
+
+``` console
+  cd "..\code"
+  conda activate base
+  python web_scraper.py
+```
+
+**Important**: previously, add Anaconda Python paths to Environment Variables.
+
 ## Anaconda installation on Linux
 1. Obtaining the latest version of Anaconda from https://www.anaconda.com/distribution/
 
@@ -33,7 +44,7 @@ Create a web scraper bot to obtain data on confirmed cases and deaths of Covid-1
 - https://www.digitalocean.com/community/tutorials/como-instalar-anaconda-en-ubuntu-18-04-quickstart-es
 - https://github.community/t5/How-to-use-Git-and-GitHub/Programatically-download-private-repository-using-Curl/td-p/30046#
 - https://papelesdeinteligencia.com/herramientas-de-web-scraping/
-
+- https://www.quora.com/Why-can-t-I-run-Python-in-CMD-but-can-in-Anaconda-Prompt
 
 ## Contributing and Feedback
 Any kind of feedback/criticism would be greatly appreciated (algorithm design, documentation, improvement ideas, spelling mistakes, etc...).

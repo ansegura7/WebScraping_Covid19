@@ -249,3 +249,38 @@ INFO:root: - The data was found
 INFO:root: - Total data: 210
 INFO:root: - Saved data: 1
 INFO:root:>> END PROGRAM: 2020-04-13 10:04:16.866694
+INFO:root:>> START PROGRAM: 2020-04-13 12:52:58.150179
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 51
+INFO:root:>> END PROGRAM: 2020-04-13 12:53:00.164621
+INFO:root:>> START PROGRAM: 2020-04-13 13:59:21.950875
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 20
+INFO:root:>> END PROGRAM: 2020-04-13 13:59:23.992144
+INFO:root:>> START PROGRAM: 2020-04-13 15:44:13.913583
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 10
+INFO:root:>> END PROGRAM: 2020-04-13 15:44:16.336420
+INFO:root:>> START PROGRAM: 2020-04-13 16:07:43.870252
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 2
+INFO:root:>> END PROGRAM: 2020-04-13 16:07:47.106228
+INFO:root:>> START PROGRAM: 2020-04-13 16:42:43.856103
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 4
+INFO:root:>> END PROGRAM: 2020-04-13 16:42:46.508298
