@@ -23,12 +23,16 @@ import pyodbc
 # Converts a string to a number (int or float) 
 def parse_num(n):
     v = 0
-    n = n.replace(',', '').replace('+', '').strip()
     
-    if '.' in n:
-        v = float(n)
-    elif n != '':
-        v = int(n)
+    if n == 'N/A':
+        v = -1
+    else:
+        n = n.replace(',', '').replace('+', '').strip()
+        
+        if '.' in n:
+            v = float(n)
+        elif n != '':
+            v = int(n)
     
     return v
 

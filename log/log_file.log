@@ -180,3 +180,51 @@ INFO:root: - The data was found
 INFO:root: - Total data: 210
 INFO:root: - Saved data: 2
 INFO:root:>> END PROGRAM: 2020-04-12 19:49:08.005220
+INFO:root:>> START PROGRAM: 2020-04-12 22:20:38.098440
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root:>> START PROGRAM: 2020-04-12 22:22:17.949319
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root:>> START PROGRAM: 2020-04-12 22:22:50.095881
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 9
+INFO:root:>> END PROGRAM: 2020-04-12 22:22:52.423941
+INFO:root:>> START PROGRAM: 2020-04-13 08:20:00.950001
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 86
+INFO:root:>> END PROGRAM: 2020-04-13 08:20:03.392141
+INFO:root:>> START PROGRAM: 2020-04-13 08:21:54.362725
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 1
+INFO:root:>> END PROGRAM: 2020-04-13 08:22:05.044315
+INFO:root:>> START PROGRAM: 2020-04-13 08:23:53.005355
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 2
+INFO:root:>> END PROGRAM: 2020-04-13 08:23:54.815922
+INFO:root:>> START PROGRAM: 2020-04-13 08:26:18.233397
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 1
+INFO:root:>> END PROGRAM: 2020-04-13 08:26:24.111065
+INFO:root:>> START PROGRAM: 2020-04-13 08:27:12.440151
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 0
+INFO:root:>> END PROGRAM: 2020-04-13 08:27:14.624109
