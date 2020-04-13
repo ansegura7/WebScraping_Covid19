@@ -2,7 +2,7 @@
 """
     Created By: Andres Segura Tinoco
     Created On: Apr 10, 2020
-    Description: Web scraping to obtain data on infections and deaths from Covid-19
+    Description: Web scraping to obtain data on confirmed cases and deaths of Covid-19
     Source: https://www.worldometers.info/coronavirus/
 """
 
@@ -55,14 +55,12 @@ def merge_data(record_list):
         
         # Merge many rows
         query = '''MERGE [dbo].[covid_19] USING (
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                   ) AS vals ([country],[total_cases],[new_cases],[total_deaths],[new_deaths],[total_recovered],[active_cases],
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                   ) AS vals ([country],[total_cases],[total_deaths],[total_recovered],[active_cases],
                               [serious_critical],[tot_cases_1m_pop],[deaths_1m_pop],[total_tests],[tests_1m_pop],[datestamp])
                    ON covid_19.[country] = vals.[country] AND
                       covid_19.[total_cases] = vals.[total_cases] AND
-                      covid_19.[new_cases] = vals.[new_cases] AND
                       covid_19.[total_deaths] = vals.[total_deaths] AND
-                      covid_19.[new_deaths] = vals.[new_deaths] AND
                       covid_19.[total_recovered] = vals.[total_recovered] AND
                       covid_19.[active_cases] = vals.[active_cases] AND
                       covid_19.[serious_critical] = vals.[serious_critical] AND
@@ -71,9 +69,9 @@ def merge_data(record_list):
                       covid_19.[total_tests] = vals.[total_tests] AND
                       covid_19.[tests_1m_pop] = vals.[tests_1m_pop]
                    WHEN NOT MATCHED THEN
-                       INSERT ([country],[total_cases],[new_cases],[total_deaths],[new_deaths],[total_recovered],[active_cases],
+                       INSERT ([country],[total_cases],[total_deaths],[total_recovered],[active_cases],
                                [serious_critical],[tot_cases_1m_pop],[deaths_1m_pop],[total_tests],[tests_1m_pop],[datestamp])
-                       VALUES (vals.[country],vals.[total_cases],vals.[new_cases],vals.[total_deaths],vals.[new_deaths],vals.[total_recovered],vals.[active_cases],
+                       VALUES (vals.[country],vals.[total_cases],vals.[total_deaths],vals.[total_recovered],vals.[active_cases],
                             vals.[serious_critical],vals.[tot_cases_1m_pop],vals.[deaths_1m_pop],vals.[total_tests],vals.[tests_1m_pop],vals.[datestamp]);
                 '''
         
@@ -138,9 +136,7 @@ def web_scraping_data():
                         record = {
                             'country': cols[0].a.text,
                             'total_cases': parse_num(cols[1].text),
-                            'new_cases': parse_num(cols[2].text),
                             'total_deaths': parse_num(cols[3].text),
-                            'new_deaths': parse_num(cols[4].text),
                             'total_recovered': parse_num(cols[5].text),
                             'active_cases': parse_num(cols[6].text),
                             'serious_critical': parse_num(cols[7].text),
@@ -152,7 +148,7 @@ def web_scraping_data():
                         }
                         record_list.append(list(record.values()))
             
-            logging.info(' - The data was found')            
+            logging.info(' - The data was found')       
     
     # Return data
     return record_list
@@ -164,7 +160,7 @@ logging.basicConfig(filename="../log/log_file.log", level=logging.INFO)
 logging.info(">> START PROGRAM: " + str(datetime.now()))
 
 # Get data
-data = web_scraping_data();
+data = web_scraping_data()
 
 # Save data
 merge_data(data)

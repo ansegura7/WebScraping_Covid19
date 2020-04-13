@@ -124,3 +124,59 @@ INFO:root: - The data was found
 INFO:root: - Total data: 210
 INFO:root: - Saved data: 50
 INFO:root:>> END PROGRAM: 2020-04-11 14:28:19.297570
+INFO:root:>> START PROGRAM: 2020-04-11 18:49:39.097397
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 38
+INFO:root:>> END PROGRAM: 2020-04-11 18:49:47.482330
+INFO:root:>> START PROGRAM: 2020-04-11 20:16:08.558834
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 150
+INFO:root:>> END PROGRAM: 2020-04-11 20:16:13.432380
+INFO:root:>> START PROGRAM: 2020-04-11 20:16:31.356336
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 1
+INFO:root:>> END PROGRAM: 2020-04-11 20:16:34.680572
+INFO:root:>> START PROGRAM: 2020-04-12 09:19:06.752544
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 102
+INFO:root:>> END PROGRAM: 2020-04-12 09:19:08.492319
+INFO:root:>> START PROGRAM: 2020-04-12 15:50:22.051437
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 72
+INFO:root:>> END PROGRAM: 2020-04-12 15:50:24.515666
+INFO:root:>> START PROGRAM: 2020-04-12 19:44:13.327808
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 31
+INFO:root:>> END PROGRAM: 2020-04-12 19:44:17.025414
+INFO:root:>> START PROGRAM: 2020-04-12 19:48:32.723895
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+ERROR:root: - Pyodbc error: ('Expected 13 parameters, supplied 11', 'HY000')
+INFO:root:>> END PROGRAM: 2020-04-12 19:48:39.008074
+INFO:root:>> START PROGRAM: 2020-04-12 19:49:04.255153
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 2
+INFO:root:>> END PROGRAM: 2020-04-12 19:49:08.005220
