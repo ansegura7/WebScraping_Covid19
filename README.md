@@ -13,10 +13,12 @@ To run the web scraper bot on Windows, type the following commands (below) at th
   python web_scraper.py
 ```
 
-**Important**: previously, add Anaconda Python paths to Environment Variables -> User Variables.
+Previously, Anaconda Python paths must be added to: Environment Variables -> User Variables.
 ``` console
   where python
 ```
+
+In order to automate the process, a Task can be created in the Windows Task Scheduler, to configure the execution of the web scraper bot every x hours.
 
 ## Documentation
 Below, some useful links:
