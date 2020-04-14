@@ -284,3 +284,49 @@ INFO:root: - The data was found
 INFO:root: - Total data: 210
 INFO:root: - Saved data: 4
 INFO:root:>> END PROGRAM: 2020-04-13 16:42:46.508298
+INFO:root:>> START PROGRAM: 2020-04-13 18:38:09.560698
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 26
+INFO:root:>> END PROGRAM: 2020-04-13 18:38:18.769795
+INFO:root:>> START PROGRAM: 2020-04-13 19:29:46.797535
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 5
+INFO:root:>> END PROGRAM: 2020-04-13 19:29:50.106187
+INFO:root:>> START PROGRAM: 2020-04-13 20:00:02.341308
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 5
+INFO:root:>> END PROGRAM: 2020-04-13 20:00:04.450680
+INFO:root:>> START PROGRAM: 2020-04-14 08:58:15.901145
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-04-14 08:58:15.994893
+INFO:root:>> START PROGRAM: 2020-04-14 09:01:12.559354
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 104
+INFO:root:>> END PROGRAM: 2020-04-14 09:01:14.340644
+INFO:root:>> START PROGRAM: 2020-04-14 09:36:17.560029
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 10
+INFO:root:>> END PROGRAM: 2020-04-14 09:36:19.356951
+INFO:root:>> START PROGRAM: 2020-04-14 09:44:52.451760
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Saved data: 2
+INFO:root:>> END PROGRAM: 2020-04-14 09:44:54.389440

@@ -13,38 +13,16 @@ To run the web scraper bot on Windows, type the following commands (below) at th
   python web_scraper.py
 ```
 
-**Important**: previously, add Anaconda Python paths to Environment Variables.
-
-## Anaconda installation on Linux
-1. Obtaining the latest version of Anaconda from https://www.anaconda.com/distribution/
-
-2. Download latest version
+**Important**: previously, add Anaconda Python paths to Environment Variables -> User Variables.
 ``` console
-  cd /tmp
-  curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
-```
-
-3. Integrity check
-``` console
-  sha256sum Anaconda3-2020.02-Linux-x86_64.sh
-```
-
-4. Install
-``` console
-  bash Anaconda3-2019.03-Linux-x86_64.sh
-```
-
-5. Activation
-``` console
-  source ~/.bashrc
+  where python
 ```
 
 ## Documentation
-- https://realpython.com/tutorials/web-scraping/
-- https://www.digitalocean.com/community/tutorials/como-instalar-anaconda-en-ubuntu-18-04-quickstart-es
-- https://github.community/t5/How-to-use-Git-and-GitHub/Programatically-download-private-repository-using-Curl/td-p/30046#
-- https://papelesdeinteligencia.com/herramientas-de-web-scraping/
-- https://www.quora.com/Why-can-t-I-run-Python-in-CMD-but-can-in-Anaconda-Prompt
+- <a href-="https://realpython.com/tutorials/web-scraping/" target="_blank" >Python Web Scraping Tutorials</a>
+- <a href-="https://papelesdeinteligencia.com/herramientas-de-web-scraping/" target="_blank" >10 Web Scraping Tools (Spanish)</a>
+- <a href-="https://www.quora.com/Why-can-t-I-run-Python-in-CMD-but-can-in-Anaconda-Prompt/" target="_blank" >Run Anaconda Python in CMD</a>
+- <a href-="https://www.thewindowsclub.com/how-to-schedule-batch-file-run-automatically-windows-7/" target="_blank" >Schedule a Batch file to run Automatically</a>
 
 ## Contributing and Feedback
 Any kind of feedback/criticism would be greatly appreciated (algorithm design, documentation, improvement ideas, spelling mistakes, etc...).
