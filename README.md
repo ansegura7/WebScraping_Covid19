@@ -26,6 +26,20 @@ There are several ways to run the web scraper bot on Windows:
 
 In order to automate the process, a Task can be created in the **Windows Task Scheduler**, to configure the execution of the web scraper bot every x hours.
 
+![task-sch-0-img](https://github.com/ansegura7/WebScraping_Covid19/blob/master/img/task-sch-0.PNG?raw=true)
+
+1. Create a new **Task** in Windows Task Scheduler.
+
+![task-sch-1-img](https://github.com/ansegura7/WebScraping_Covid19/blob/master/img/task-sch-1.PNG?raw=true)
+
+2. Set up a **Trigger** that runs the task every day every x hours.
+
+![task-sch-2-img](https://github.com/ansegura7/WebScraping_Covid19/blob/master/img/task-sch-2.PNG?raw=true)
+
+3. In the **Action** tab, select the .bat file and the folder from where the Task will be executed.
+
+![task-sch-3-img](https://github.com/ansegura7/WebScraping_Covid19/blob/master/img/task-sch-3.PNG?raw=true)
+
 ## Documentation
 Below, some useful links:
 - <a href="https://realpython.com/tutorials/web-scraping/" target="_blank" >Python Web Scraping Tutorials</a>
