@@ -126,7 +126,7 @@ def merge_data(db_login, record_list):
         n_final = int(n_final[0])
         
         logging.info(' - Data stored in the database: ' + str(n_final - n_init))
-        result = True
+        result = (n_final > n_init)
     finally:
         cnxn.autocommit = True
         cursor.close()
@@ -204,28 +204,32 @@ def web_scraping_data():
         # Get data
         if curr_table != None:
             logging.info(' - Getting data')
+            rows = curr_table.findAll('tr')
             
-            for row in curr_table.findAll('tr'):
-                cols = row.findAll('td')
-                if len(cols) == 13:
-                    if 'country' in str(cols[0].a):
-                        
-                        record = {
-                            'country': cols[0].a.text,
-                            'total_cases': parse_num(cols[1].text),
-                            'total_deaths': parse_num(cols[3].text),
-                            'total_recovered': parse_num(cols[5].text),
-                            'active_cases': parse_num(cols[6].text),
-                            'serious_critical': parse_num(cols[7].text),
-                            'tot_cases_1m_pop': parse_num(cols[8].text),
-                            'deaths_1m_pop': parse_num(cols[9].text),
-                            'total_tests': parse_num(cols[10].text),
-                            'tests_1m_pop': parse_num(cols[11].text),
-                            'datestamp': datetime.now()
-                        }
-                        record_list.append(list(record.values()))
-            
-            logging.info(' - The data was found')
+            if len(rows):
+                for row in rows:
+                    cols = row.findAll('td')
+                    if len(cols) == 13:
+                        if 'country' in str(cols[0].a):
+                            
+                            record = {
+                                'country': cols[0].a.text,
+                                'total_cases': parse_num(cols[1].text),
+                                'total_deaths': parse_num(cols[3].text),
+                                'total_recovered': parse_num(cols[5].text),
+                                'active_cases': parse_num(cols[6].text),
+                                'serious_critical': parse_num(cols[7].text),
+                                'tot_cases_1m_pop': parse_num(cols[8].text),
+                                'deaths_1m_pop': parse_num(cols[9].text),
+                                'total_tests': parse_num(cols[10].text),
+                                'tests_1m_pop': parse_num(cols[11].text),
+                                'datestamp': datetime.now()
+                            }
+                            record_list.append(list(record.values()))
+                
+                logging.info(' - The data was found')
+            else:
+                logging.info(' - The data was not found')
     
     # Return data
     return record_list
@@ -243,10 +247,11 @@ data = web_scraping_data()
 db_login = get_db_credentials()
 
 # 3. Store data
-merge_data(db_login, data)
+result = merge_data(db_login, data)
 
 # 4. Generate derived data
-generate_data(db_login)
+if result:
+    generate_data(db_login)
 
 logging.info(">> END PROGRAM: " + str(datetime.now()))
 logging.shutdown()
