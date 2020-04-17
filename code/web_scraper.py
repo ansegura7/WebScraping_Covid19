@@ -9,6 +9,7 @@
 # Import util libraries
 import logging
 import yaml
+import csv
 from datetime import datetime
 
 # Import Web Scraping libraries
@@ -21,7 +22,7 @@ from bs4 import BeautifulSoup
 # Database libraries
 import pyodbc
 
-# Converts a string to a number (int or float) 
+# Util function - Converts a string to a number (int or float) 
 def parse_num(n):
     v = 0
     
@@ -37,7 +38,24 @@ def parse_num(n):
     
     return v
 
-# Get database credentials
+# Util function - Save datatable (list format) to CSV file
+def save_dt_to_csv(dt, filename, header):
+    result = False
+
+    # Validating data
+    if dt and len(dt):
+        
+        # Saving data in CSV file
+        with open(filename, 'w', encoding='utf8', newline='') as f:
+            wr = csv.writer(f, delimiter=',', )
+            wr.writerow(header)
+            for row in dt:
+                wr.writerow(row)
+            result = True
+    
+    return result
+
+# DB function - Get database credentials
 def get_db_credentials():
     db_login = dict()
     yaml_path = 'config\database.yml'
@@ -48,8 +66,8 @@ def get_db_credentials():
     
     return db_login
 
-# DB function: merge a list records in the MS SQL Server table
-def merge_data(record_list):
+# DB function - Merge a list records in the MS SQL Server table
+def merge_data(db_login, record_list):
     result = False
     
     if len(record_list) == 0:
@@ -59,7 +77,6 @@ def merge_data(record_list):
         logging.info(' - Total data: ' + str(len(record_list)))
     
     # Get database connection
-    db_login = get_db_credentials()
     cnxn = pyodbc.connect(driver=db_login['driver'], server=db_login['server'], database=db_login['database'], trusted_connection=db_login['trusted_connection'])
     
     try:
@@ -71,7 +88,8 @@ def merge_data(record_list):
         n_init = int(n_init[0])
         
         # Merge many rows
-        query = '''MERGE [dbo].[covid19_data] AS a USING (
+        query = '''
+                   MERGE [dbo].[covid19_data] AS a USING (
                         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                    ) AS vals ([country],[total_cases],[total_deaths],[total_recovered],[active_cases],
                               [serious_critical],[tot_cases_1m_pop],[deaths_1m_pop],[total_tests],[tests_1m_pop],[datestamp])
@@ -107,12 +125,54 @@ def merge_data(record_list):
         n_final = cursor.execute(query).fetchone()
         n_final = int(n_final[0])
         
-        logging.info(' - Saved data: ' + str(n_final - n_init))
+        logging.info(' - Data stored in the database: ' + str(n_final - n_init))
         result = True
     finally:
         cnxn.autocommit = True
         cursor.close()
     
+    return result
+
+# DB function - Generate derived data as a CSV file
+def generate_data(db_login):
+    result = False
+    
+    # Get database connection
+    cnxn = pyodbc.connect(driver=db_login['driver'], server=db_login['server'], database=db_login['database'], trusted_connection=db_login['trusted_connection'])
+    
+    try:
+        cursor = cnxn.cursor()
+        
+        # Latest data by country sorted by total_deaths
+        query = '''
+                SELECT ROW_NUMBER() OVER(ORDER BY total_deaths DESC) AS row_number, a.country, a.total_cases, a.total_deaths, a.total_recovered, 
+                	   a.active_cases, a.serious_critical, a.tot_cases_1m_pop, a.deaths_1m_pop, a.total_tests, a.tests_1m_pop, a.datestamp
+                  FROM [dbo].[covid19_data] AS a
+                 WHERE a.[datestamp] = 
+                	(SELECT MAX(b.[datestamp])
+                	   FROM [dbo].[covid19_data] AS b
+                	  WHERE b.country = a.country);
+                '''
+                
+        dt = cursor.execute(query).fetchall()
+        
+    except pyodbc.DatabaseError as e:
+        logging.error(' - Pyodbc error: ' + str(e))
+    else:
+        
+        # Save data table (list format) to CSV file
+        filename = '../data/current_data.csv'
+        header = ['row_number', 'country', 'total_cases', 'total_deaths', 'total_recovered', 'active_cases', 'serious_critical', 'tot_cases_1m_pop', 'deaths_1m_pop', 'total_tests', 'tests_1m_pop', 'datestamp']
+        result = save_dt_to_csv(dt, filename, header)
+            
+        if result:
+            logging.info(' - Data saved in CSV file')
+        else:
+            logging.info(' - CSV file not created')
+        
+    finally:
+        cursor.close()
+        
     return result
 
 # Web Scraping function
@@ -165,7 +225,7 @@ def web_scraping_data():
                         }
                         record_list.append(list(record.values()))
             
-            logging.info(' - The data was found')       
+            logging.info(' - The data was found')
     
     # Return data
     return record_list
@@ -176,11 +236,17 @@ def web_scraping_data():
 logging.basicConfig(filename="log/log_file.log", level=logging.INFO)
 logging.info(">> START PROGRAM: " + str(datetime.now()))
 
-# Get data
+# 1. Get data
 data = web_scraping_data()
 
-# Save data
-merge_data(data)
+# 2. Get database credentials
+db_login = get_db_credentials()
+
+# 3. Store data
+merge_data(db_login, data)
+
+# 4. Generate derived data
+generate_data(db_login)
 
 logging.info(">> END PROGRAM: " + str(datetime.now()))
 logging.shutdown()
