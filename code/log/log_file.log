@@ -541,3 +541,51 @@ INFO:root: - Total data: 210
 INFO:root: - Data stored in the database: 49
 INFO:root: - Data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-04-18 12:00:04.585120
+INFO:root:>> START PROGRAM: 2020-04-18 16:00:02.598798
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 42
+INFO:root: - Data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-18 16:00:06.045378
+INFO:root:>> START PROGRAM: 2020-04-18 20:00:02.616236
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 29
+INFO:root: - Data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-18 20:00:05.069390
+INFO:root:>> START PROGRAM: 2020-04-19 00:00:01.971367
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 18
+INFO:root: - Data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-19 00:00:04.424488
+INFO:root:>> START PROGRAM: 2020-04-19 04:00:02.294635
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 35
+INFO:root: - Data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-19 04:00:04.263385
+INFO:root:>> START PROGRAM: 2020-04-19 08:00:02.666924
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 50
+INFO:root: - Data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-19 08:00:04.948183
+INFO:root:>> START PROGRAM: 2020-04-19 12:00:02.857438
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 61
+INFO:root: - Data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-19 12:00:05.216818
