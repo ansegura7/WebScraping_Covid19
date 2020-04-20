@@ -1,7 +1,7 @@
 USE [DATABASE_NAME]
 GO
 
-/****** Object:  Table [dbo].[covid19_data]    Script Date: 4/13/2020 9:16:28 AM ******/
+/****** Object:  Table [dbo].[covid19_data]    Script Date: 4/20/2020 8:56:25 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -9,8 +9,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[covid19_data](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[country] [nvarchar](100) NULL,
+	[country] [nvarchar](100) NOT NULL,
+	[datestamp] [datetime] NOT NULL,
 	[total_cases] [int] NULL,
 	[total_deaths] [int] NULL,
 	[total_recovered] [int] NULL,
@@ -20,10 +20,10 @@ CREATE TABLE [dbo].[covid19_data](
 	[deaths_1m_pop] [float] NULL,
 	[total_tests] [int] NULL,
 	[tests_1m_pop] [float] NULL,
-	[datestamp] [datetime] NULL,
- CONSTRAINT [PK_covid_19] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_covid19_data] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+	[country] ASC,
+	[datestamp] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO

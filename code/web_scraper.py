@@ -104,10 +104,10 @@ def merge_data(db_login, record_list):
                       a.[total_tests] = vals.[total_tests] AND
                       a.[tests_1m_pop] = vals.[tests_1m_pop]
                    WHEN NOT MATCHED THEN
-                       INSERT ([country],[total_cases],[total_deaths],[total_recovered],[active_cases],
-                               [serious_critical],[tot_cases_1m_pop],[deaths_1m_pop],[total_tests],[tests_1m_pop],[datestamp])
-                       VALUES (vals.[country],vals.[total_cases],vals.[total_deaths],vals.[total_recovered],vals.[active_cases],
-                            vals.[serious_critical],vals.[tot_cases_1m_pop],vals.[deaths_1m_pop],vals.[total_tests],vals.[tests_1m_pop],vals.[datestamp]);
+                       INSERT ([country],[datestamp],[total_cases],[total_deaths],[total_recovered],[active_cases],
+                               [serious_critical],[tot_cases_1m_pop],[deaths_1m_pop],[total_tests],[tests_1m_pop])
+                       VALUES (vals.[country],vals.[datestamp],vals.[total_cases],vals.[total_deaths],vals.[total_recovered],vals.[active_cases],
+                               vals.[serious_critical],vals.[tot_cases_1m_pop],vals.[deaths_1m_pop],vals.[total_tests],vals.[tests_1m_pop]);
                 '''
         
         cnxn.autocommit = False
