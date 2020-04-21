@@ -28,7 +28,13 @@ And <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DD
 ## Dependencies
 The project was carried out with the latest version of <a href="https://www.anaconda.com/distribution/" target="_blank" >Anaconda</a> on Windows.
 
-The Python 3.7 libraries used are:
+If the main Web Scraping libraries do not come with the selected Anaconda distribution, you can install them with the following commands:
+``` console
+  conda install -c anaconda beautifulsoup4
+  conda install -c conda-forge selenium
+```
+
+The specific Python 3.7 libraries used are:
 
 ``` python
   # Import util libraries
@@ -37,15 +43,19 @@ The Python 3.7 libraries used are:
   import csv
   from datetime import datetime
   
-  # Import Web Scraping libraries
+  # Database libraries
+  import pyodbc
+
+  # Import Web Scraping 1 libraries
   from urllib.request import urlopen
   from urllib.request import Request
   from urllib.error import HTTPError
   from urllib.error import URLError
   from bs4 import BeautifulSoup
   
-  # Database libraries
-  import pyodbc
+  # Import Web Scraping 2 libraries
+  from selenium import webdriver
+  from selenium.webdriver.chrome.options import Options
 ```
 
 ## Run Bot

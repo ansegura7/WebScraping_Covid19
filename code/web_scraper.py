@@ -211,6 +211,7 @@ def web_scraping_data():
                     cols = row.findAll('td')
                     if len(cols) == 13:
                         if 'country' in str(cols[0].a):
+                            # print(cols[0].a.text, ',', cols[0].a.get('href'))
                             
                             record = {
                                 'country': cols[0].a.text,
