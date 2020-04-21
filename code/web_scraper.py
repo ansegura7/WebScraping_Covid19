@@ -12,15 +12,15 @@ import yaml
 import csv
 from datetime import datetime
 
+# Database libraries
+import pyodbc
+
 # Import Web Scraping libraries
 from urllib.request import urlopen
 from urllib.request import Request
 from urllib.error import HTTPError
 from urllib.error import URLError
 from bs4 import BeautifulSoup
-
-# Database libraries
-import pyodbc
 
 # Util function - Converts a string to a number (int or float) 
 def parse_num(n):
@@ -47,7 +47,7 @@ def save_dt_to_csv(dt, filename, header):
         
         # Saving data in CSV file
         with open(filename, 'w', encoding='utf8', newline='') as f:
-            wr = csv.writer(f, delimiter=',', )
+            wr = csv.writer(f, delimiter=',')
             wr.writerow(header)
             for row in dt:
                 wr.writerow(row)
@@ -241,11 +241,11 @@ def web_scraping_data():
 logging.basicConfig(filename="log/log_file.log", level=logging.INFO)
 logging.info(">> START PROGRAM: " + str(datetime.now()))
 
-# 1. Get data
-data = web_scraping_data()
-
-# 2. Get database credentials
+# 1. Get database credentials
 db_login = get_db_credentials()
+
+# 2. Get last data
+data = web_scraping_data()
 
 # 3. Store data
 result = merge_data(db_login, data)

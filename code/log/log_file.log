@@ -717,3 +717,11 @@ INFO:root: - Total data: 210
 INFO:root: - Data stored in the database: 3
 INFO:root: - Data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-04-21 14:08:50.459693
+INFO:root:>> START PROGRAM: 2020-04-21 16:00:02.932678
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 20
+INFO:root: - Data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-21 16:00:05.187000
