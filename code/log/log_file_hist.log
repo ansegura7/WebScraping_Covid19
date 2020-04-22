@@ -1,0 +1,65 @@
+INFO:root:>> START PROGRAM: 2020-04-22 10:17:46.809275
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Afghanistan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Albania
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Algeria
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Andorra
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Angola
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 5 countries: 2020-04-22 10:18:15.253056
+INFO:root: - Data stored in the database for Afghanistan, n: 54
+INFO:root: - Data stored in the database for Albania, n: 54
+INFO:root: - Data stored in the database for Algeria, n: 54
+INFO:root: - Data stored in the database for Andorra, n: 54
+INFO:root: - Data stored in the database for Angola, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 10:18:15.312056
+INFO:root:>> END PROGRAM: 2020-04-22 10:18:15.312056
+INFO:root:>> START PROGRAM: 2020-04-22 10:45:43.662745
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Anguilla
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Incomplete country data
+INFO:root: - The document was read for: Antigua and Barbuda
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Argentina
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Armenia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Aruba
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Australia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 5 countries: 2020-04-22 10:46:22.179927
+INFO:root: - Data stored in the database for Antigua and Barbuda, n: 54
+INFO:root: - Data stored in the database for Argentina, n: 54
+INFO:root: - Data stored in the database for Armenia, n: 54
+INFO:root: - Data stored in the database for Aruba, n: 54
+INFO:root: - Data stored in the database for Australia, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 10:46:22.207927
+INFO:root:>> END PROGRAM: 2020-04-22 10:46:22.207927

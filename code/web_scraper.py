@@ -2,7 +2,7 @@
 """
     Created By: Andres Segura Tinoco
     Created On: Apr 10, 2020
-    Description: Web scraping to obtain data on confirmed cases and deaths of Covid-19
+    Description: Web scraping to obtain daily data on confirmed cases and deaths of Covid-19
     Source: https://www.worldometers.info/coronavirus/
 """
 
