@@ -199,13 +199,13 @@ def web_scraping_hist(db_login, batch_size, threshold):
                         logging.info(' - The data was not found for: ' + chart_name)
                 
                 # Temp save country hist data
-                if len(country_data) == 3:
+                if len(country_data):
                     
-                    # Merge data into a list
-                    dict1 = country_data[data_cols[0]]
-                    dict2 = country_data[data_cols[1]]
-                    dict3 = country_data[data_cols[2]]
-                    country_list = [(name, k, dict1[k], dict2[k], dict3[k]) for k, v in dict1.items()]
+                    # Merge data into a list (with default value)
+                    dict1 = country_data.get(data_cols[0], {})
+                    dict2 = country_data.get(data_cols[1], {})
+                    dict3 = country_data.get(data_cols[2], {})
+                    country_list = [(name, k, dict1.get(k, 0), dict2.get(k, 0), dict3.get(k, 0)) for k, v in dict1.items()]
                     
                     # Temporary saved
                     record_list[name] = country_list
@@ -229,8 +229,8 @@ logging.info(">> START PROGRAM: " + str(datetime.now()))
 db_login = get_db_credentials()
 
 # 2. Declaration of the execution variables
-batch_size = 5
-threshold = 30
+batch_size = 25
+threshold = 15
 
 # 3. Get historical data
 data = web_scraping_hist(db_login, batch_size, threshold)

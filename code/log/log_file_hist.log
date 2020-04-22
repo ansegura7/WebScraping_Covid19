@@ -63,3 +63,1057 @@ INFO:root: - Data stored in the database for Aruba, n: 54
 INFO:root: - Data stored in the database for Australia, n: 54
 INFO:root: - End of bulk insert: 2020-04-22 10:46:22.207927
 INFO:root:>> END PROGRAM: 2020-04-22 10:46:22.207927
+INFO:root:>> START PROGRAM: 2020-04-22 11:35:54.517911
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Anguilla
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Austria
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Azerbaijan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Bahamas
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Bahrain
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 5 countries: 2020-04-22 11:36:23.682080
+INFO:root: - Data stored in the database for Anguilla, n: 54
+INFO:root: - Data stored in the database for Austria, n: 54
+INFO:root: - Data stored in the database for Azerbaijan, n: 54
+INFO:root: - Data stored in the database for Bahamas, n: 54
+INFO:root: - Data stored in the database for Bahrain, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 11:36:23.700075
+INFO:root:>> END PROGRAM: 2020-04-22 11:36:23.700075
+INFO:root:>> START PROGRAM: 2020-04-22 11:54:48.972519
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Bangladesh
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Barbados
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Belarus
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Belgium
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Belize
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Benin
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Bermuda
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Bhutan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Bolivia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Bosnia and Herzegovina
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 10 countries: 2020-04-22 11:55:54.009288
+INFO:root: - Data stored in the database for Bangladesh, n: 54
+INFO:root: - Data stored in the database for Barbados, n: 54
+INFO:root: - Data stored in the database for Belarus, n: 54
+INFO:root: - Data stored in the database for Belgium, n: 54
+INFO:root: - Data stored in the database for Belize, n: 54
+INFO:root: - Data stored in the database for Benin, n: 54
+INFO:root: - Data stored in the database for Bermuda, n: 54
+INFO:root: - Data stored in the database for Bhutan, n: 54
+INFO:root: - Data stored in the database for Bolivia, n: 54
+INFO:root: - Data stored in the database for Bosnia and Herzegovina, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 11:55:54.043284
+INFO:root:>> END PROGRAM: 2020-04-22 11:55:54.043284
+INFO:root:>> START PROGRAM: 2020-04-22 11:58:33.275499
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Botswana
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Brazil
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: British Virgin Islands
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Brunei 
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Bulgaria
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Burkina Faso
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Burundi
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Cabo Verde
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Cambodia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Cameroon
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Canada
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: CAR
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Caribbean Netherlands
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Cayman Islands
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Chad
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Channel Islands
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Chile
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: China
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Colombia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Congo
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Costa Rica
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Croatia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Cuba
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Curaçao
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Cyprus
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 25 countries: 2020-04-22 12:00:24.130621
+INFO:root: - Data stored in the database for Botswana, n: 54
+INFO:root: - Data stored in the database for Brazil, n: 54
+INFO:root: - Data stored in the database for British Virgin Islands, n: 54
+INFO:root: - Data stored in the database for Brunei , n: 54
+INFO:root: - Data stored in the database for Bulgaria, n: 54
+INFO:root: - Data stored in the database for Burkina Faso, n: 54
+INFO:root: - Data stored in the database for Burundi, n: 54
+INFO:root: - Data stored in the database for Cabo Verde, n: 54
+INFO:root: - Data stored in the database for Cambodia, n: 54
+INFO:root: - Data stored in the database for Cameroon, n: 54
+INFO:root: - Data stored in the database for Canada, n: 54
+INFO:root: - Data stored in the database for CAR, n: 54
+INFO:root: - Data stored in the database for Caribbean Netherlands, n: 54
+INFO:root: - Data stored in the database for Cayman Islands, n: 54
+INFO:root: - Data stored in the database for Chad, n: 54
+INFO:root: - Data stored in the database for Channel Islands, n: 54
+INFO:root: - Data stored in the database for Chile, n: 54
+INFO:root: - Data stored in the database for China, n: 78
+INFO:root: - Data stored in the database for Colombia, n: 54
+INFO:root: - Data stored in the database for Congo, n: 54
+INFO:root: - Data stored in the database for Costa Rica, n: 54
+INFO:root: - Data stored in the database for Croatia, n: 54
+INFO:root: - Data stored in the database for Cuba, n: 54
+INFO:root: - Data stored in the database for Curaçao, n: 54
+INFO:root: - Data stored in the database for Cyprus, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 12:00:24.240620
+INFO:root:>> END PROGRAM: 2020-04-22 12:00:24.240620
+INFO:root:>> START PROGRAM: 2020-04-22 12:01:27.240981
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Czechia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Denmark
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Djibouti
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Dominica
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Dominican Republic
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: DRC
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Ecuador
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Egypt
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: El Salvador
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Equatorial Guinea
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Eritrea
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Estonia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Eswatini
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Ethiopia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Faeroe Islands
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Falkland Islands
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Fiji
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Finland
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: France
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: French Guiana
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: French Polynesia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Gabon
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Gambia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Georgia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Germany
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 25 countries: 2020-04-22 12:02:47.615505
+INFO:root: - Data stored in the database for Czechia, n: 54
+INFO:root: - Data stored in the database for Denmark, n: 54
+INFO:root: - Data stored in the database for Djibouti, n: 54
+INFO:root: - Data stored in the database for Dominica, n: 54
+INFO:root: - Data stored in the database for Dominican Republic, n: 54
+INFO:root: - Data stored in the database for DRC, n: 54
+INFO:root: - Data stored in the database for Ecuador, n: 54
+INFO:root: - Data stored in the database for Egypt, n: 54
+INFO:root: - Data stored in the database for El Salvador, n: 54
+INFO:root: - Data stored in the database for Equatorial Guinea, n: 54
+INFO:root: - Data stored in the database for Eritrea, n: 54
+INFO:root: - Data stored in the database for Estonia, n: 54
+INFO:root: - Data stored in the database for Eswatini, n: 54
+INFO:root: - Data stored in the database for Ethiopia, n: 54
+INFO:root: - Data stored in the database for Faeroe Islands, n: 54
+INFO:root: - Data stored in the database for Falkland Islands, n: 54
+INFO:root: - Data stored in the database for Fiji, n: 54
+INFO:root: - Data stored in the database for Finland, n: 54
+INFO:root: - Data stored in the database for France, n: 54
+INFO:root: - Data stored in the database for French Guiana, n: 54
+INFO:root: - Data stored in the database for French Polynesia, n: 54
+INFO:root: - Data stored in the database for Gabon, n: 54
+INFO:root: - Data stored in the database for Gambia, n: 54
+INFO:root: - Data stored in the database for Georgia, n: 54
+INFO:root: - Data stored in the database for Germany, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 12:02:47.706504
+INFO:root:>> END PROGRAM: 2020-04-22 12:02:47.706504
+INFO:root:>> START PROGRAM: 2020-04-22 12:03:29.794188
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Ghana
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Gibraltar
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Greece
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Greenland
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Grenada
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Guadeloupe
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Guatemala
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Guinea
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Guinea-Bissau
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Guyana
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Haiti
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Honduras
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Hong Kong
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Hungary
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Iceland
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: India
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Indonesia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Iran
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Iraq
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Ireland
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Isle of Man
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Israel
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Italy
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Ivory Coast
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Jamaica
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 25 countries: 2020-04-22 12:05:38.717217
+INFO:root: - Data stored in the database for Ghana, n: 54
+INFO:root: - Data stored in the database for Gibraltar, n: 54
+INFO:root: - Data stored in the database for Greece, n: 54
+INFO:root: - Data stored in the database for Greenland, n: 54
+INFO:root: - Data stored in the database for Grenada, n: 54
+INFO:root: - Data stored in the database for Guadeloupe, n: 54
+INFO:root: - Data stored in the database for Guatemala, n: 54
+INFO:root: - Data stored in the database for Guinea, n: 54
+INFO:root: - Data stored in the database for Guinea-Bissau, n: 54
+INFO:root: - Data stored in the database for Guyana, n: 54
+INFO:root: - Data stored in the database for Haiti, n: 54
+INFO:root: - Data stored in the database for Honduras, n: 54
+INFO:root: - Data stored in the database for Hong Kong, n: 54
+INFO:root: - Data stored in the database for Hungary, n: 54
+INFO:root: - Data stored in the database for Iceland, n: 54
+INFO:root: - Data stored in the database for India, n: 54
+INFO:root: - Data stored in the database for Indonesia, n: 54
+INFO:root: - Data stored in the database for Iran, n: 54
+INFO:root: - Data stored in the database for Iraq, n: 54
+INFO:root: - Data stored in the database for Ireland, n: 54
+INFO:root: - Data stored in the database for Isle of Man, n: 54
+INFO:root: - Data stored in the database for Israel, n: 54
+INFO:root: - Data stored in the database for Italy, n: 54
+INFO:root: - Data stored in the database for Ivory Coast, n: 54
+INFO:root: - Data stored in the database for Jamaica, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 12:05:38.882216
+INFO:root:>> END PROGRAM: 2020-04-22 12:05:38.882216
+INFO:root:>> START PROGRAM: 2020-04-22 12:07:44.204666
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Japan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Jordan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Kazakhstan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Kenya
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Kuwait
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Kyrgyzstan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Laos
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Latvia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Lebanon
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Liberia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Libya
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Liechtenstein
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Lithuania
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Luxembourg
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Macao
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Madagascar
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Malawi
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Malaysia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Maldives
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Mali
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Malta
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Martinique
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Mauritania
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Mauritius
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Mayotte
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 25 countries: 2020-04-22 12:09:24.544847
+INFO:root: - Data stored in the database for Japan, n: 54
+INFO:root: - Data stored in the database for Jordan, n: 54
+INFO:root: - Data stored in the database for Kazakhstan, n: 54
+INFO:root: - Data stored in the database for Kenya, n: 54
+INFO:root: - Data stored in the database for Kuwait, n: 54
+INFO:root: - Data stored in the database for Kyrgyzstan, n: 54
+INFO:root: - Data stored in the database for Laos, n: 54
+INFO:root: - Data stored in the database for Latvia, n: 54
+INFO:root: - Data stored in the database for Lebanon, n: 54
+INFO:root: - Data stored in the database for Liberia, n: 54
+INFO:root: - Data stored in the database for Libya, n: 54
+INFO:root: - Data stored in the database for Liechtenstein, n: 54
+INFO:root: - Data stored in the database for Lithuania, n: 54
+INFO:root: - Data stored in the database for Luxembourg, n: 54
+INFO:root: - Data stored in the database for Macao, n: 54
+INFO:root: - Data stored in the database for Madagascar, n: 54
+INFO:root: - Data stored in the database for Malawi, n: 54
+INFO:root: - Data stored in the database for Malaysia, n: 54
+INFO:root: - Data stored in the database for Maldives, n: 54
+INFO:root: - Data stored in the database for Mali, n: 54
+INFO:root: - Data stored in the database for Malta, n: 54
+INFO:root: - Data stored in the database for Martinique, n: 54
+INFO:root: - Data stored in the database for Mauritania, n: 54
+INFO:root: - Data stored in the database for Mauritius, n: 54
+INFO:root: - Data stored in the database for Mayotte, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 12:09:24.650846
+INFO:root:>> END PROGRAM: 2020-04-22 12:09:24.650846
+INFO:root:>> START PROGRAM: 2020-04-22 12:10:02.733826
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Mexico
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Moldova
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Monaco
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Mongolia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Montenegro
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Montserrat
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Morocco
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Mozambique
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Myanmar
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Namibia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Nepal
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Netherlands
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: New Caledonia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: New Zealand
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Nicaragua
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Niger
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Nigeria
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: North Macedonia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Norway
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Oman
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Pakistan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Palestine
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Panama
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Papua New Guinea
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Paraguay
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 25 countries: 2020-04-22 12:11:28.642333
+INFO:root: - Data stored in the database for Mexico, n: 54
+INFO:root: - Data stored in the database for Moldova, n: 54
+INFO:root: - Data stored in the database for Monaco, n: 54
+INFO:root: - Data stored in the database for Mongolia, n: 54
+INFO:root: - Data stored in the database for Montenegro, n: 54
+INFO:root: - Data stored in the database for Montserrat, n: 54
+INFO:root: - Data stored in the database for Morocco, n: 54
+INFO:root: - Data stored in the database for Mozambique, n: 54
+INFO:root: - Data stored in the database for Myanmar, n: 54
+INFO:root: - Data stored in the database for Namibia, n: 54
+INFO:root: - Data stored in the database for Nepal, n: 54
+INFO:root: - Data stored in the database for Netherlands, n: 54
+INFO:root: - Data stored in the database for New Caledonia, n: 54
+INFO:root: - Data stored in the database for New Zealand, n: 54
+INFO:root: - Data stored in the database for Nicaragua, n: 54
+INFO:root: - Data stored in the database for Niger, n: 54
+INFO:root: - Data stored in the database for Nigeria, n: 54
+INFO:root: - Data stored in the database for North Macedonia, n: 54
+INFO:root: - Data stored in the database for Norway, n: 54
+INFO:root: - Data stored in the database for Oman, n: 54
+INFO:root: - Data stored in the database for Pakistan, n: 54
+INFO:root: - Data stored in the database for Palestine, n: 54
+INFO:root: - Data stored in the database for Panama, n: 54
+INFO:root: - Data stored in the database for Papua New Guinea, n: 54
+INFO:root: - Data stored in the database for Paraguay, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 12:11:28.824330
+INFO:root:>> END PROGRAM: 2020-04-22 12:11:28.824330
+INFO:root:>> START PROGRAM: 2020-04-22 12:14:13.269714
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Peru
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Philippines
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Poland
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Portugal
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Qatar
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Réunion
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Romania
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Russia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Rwanda
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: S. Korea
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Saint Kitts and Nevis
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Saint Lucia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Saint Martin
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Saint Pierre Miquelon
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: San Marino
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Sao Tome and Principe
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Saudi Arabia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Senegal
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Serbia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Seychelles
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Sierra Leone
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Singapore
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Sint Maarten
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Slovakia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Slovenia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 25 countries: 2020-04-22 12:15:48.721036
+INFO:root: - Data stored in the database for Peru, n: 54
+INFO:root: - Data stored in the database for Philippines, n: 54
+INFO:root: - Data stored in the database for Poland, n: 54
+INFO:root: - Data stored in the database for Portugal, n: 54
+INFO:root: - Data stored in the database for Qatar, n: 54
+INFO:root: - Data stored in the database for Réunion, n: 54
+INFO:root: - Data stored in the database for Romania, n: 54
+INFO:root: - Data stored in the database for Russia, n: 54
+INFO:root: - Data stored in the database for Rwanda, n: 54
+INFO:root: - Data stored in the database for S. Korea, n: 54
+INFO:root: - Data stored in the database for Saint Kitts and Nevis, n: 54
+INFO:root: - Data stored in the database for Saint Lucia, n: 54
+INFO:root: - Data stored in the database for Saint Martin, n: 54
+INFO:root: - Data stored in the database for Saint Pierre Miquelon, n: 54
+INFO:root: - Data stored in the database for San Marino, n: 54
+INFO:root: - Data stored in the database for Sao Tome and Principe, n: 54
+INFO:root: - Data stored in the database for Saudi Arabia, n: 54
+INFO:root: - Data stored in the database for Senegal, n: 54
+INFO:root: - Data stored in the database for Serbia, n: 54
+INFO:root: - Data stored in the database for Seychelles, n: 54
+INFO:root: - Data stored in the database for Sierra Leone, n: 54
+INFO:root: - Data stored in the database for Singapore, n: 54
+INFO:root: - Data stored in the database for Sint Maarten, n: 54
+INFO:root: - Data stored in the database for Slovakia, n: 54
+INFO:root: - Data stored in the database for Slovenia, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 12:15:48.856036
+INFO:root:>> END PROGRAM: 2020-04-22 12:15:48.857037
+INFO:root:>> START PROGRAM: 2020-04-22 12:17:47.949410
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Somalia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: South Africa
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: South Sudan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Spain
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Sri Lanka
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: St. Barth
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: St. Vincent Grenadines
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Sudan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Suriname
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Sweden
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Switzerland
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Syria
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Taiwan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Tanzania
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Thailand
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Timor-Leste
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Togo
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Trinidad and Tobago
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Tunisia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Turkey
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Turks and Caicos
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: UAE
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Uganda
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: UK
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Ukraine
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 25 countries: 2020-04-22 12:19:31.975658
+INFO:root: - Data stored in the database for Somalia, n: 54
+INFO:root: - Data stored in the database for South Africa, n: 54
+INFO:root: - Data stored in the database for South Sudan, n: 54
+INFO:root: - Data stored in the database for Spain, n: 54
+INFO:root: - Data stored in the database for Sri Lanka, n: 54
+INFO:root: - Data stored in the database for St. Barth, n: 54
+INFO:root: - Data stored in the database for St. Vincent Grenadines, n: 54
+INFO:root: - Data stored in the database for Sudan, n: 54
+INFO:root: - Data stored in the database for Suriname, n: 54
+INFO:root: - Data stored in the database for Sweden, n: 54
+INFO:root: - Data stored in the database for Switzerland, n: 54
+INFO:root: - Data stored in the database for Syria, n: 54
+INFO:root: - Data stored in the database for Taiwan, n: 54
+INFO:root: - Data stored in the database for Tanzania, n: 54
+INFO:root: - Data stored in the database for Thailand, n: 54
+INFO:root: - Data stored in the database for Timor-Leste, n: 54
+INFO:root: - Data stored in the database for Togo, n: 54
+INFO:root: - Data stored in the database for Trinidad and Tobago, n: 54
+INFO:root: - Data stored in the database for Tunisia, n: 54
+INFO:root: - Data stored in the database for Turkey, n: 54
+INFO:root: - Data stored in the database for Turks and Caicos, n: 54
+INFO:root: - Data stored in the database for UAE, n: 54
+INFO:root: - Data stored in the database for Uganda, n: 54
+INFO:root: - Data stored in the database for UK, n: 54
+INFO:root: - Data stored in the database for Ukraine, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 12:19:32.358661
+INFO:root:>> END PROGRAM: 2020-04-22 12:19:32.358661
+INFO:root:>> START PROGRAM: 2020-04-22 12:21:16.632540
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Uruguay
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: USA
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Uzbekistan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Vatican City
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Venezuela
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Vietnam
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Western Sahara
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Yemen
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Zambia
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Zimbabwe
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 10 countries: 2020-04-22 12:22:03.313757
+INFO:root: - Data stored in the database for Uruguay, n: 54
+INFO:root: - Data stored in the database for USA, n: 54
+INFO:root: - Data stored in the database for Uzbekistan, n: 54
+INFO:root: - Data stored in the database for Vatican City, n: 54
+INFO:root: - Data stored in the database for Venezuela, n: 54
+INFO:root: - Data stored in the database for Vietnam, n: 54
+INFO:root: - Data stored in the database for Western Sahara, n: 54
+INFO:root: - Data stored in the database for Yemen, n: 55
+INFO:root: - Data stored in the database for Zambia, n: 54
+INFO:root: - Data stored in the database for Zimbabwe, n: 54
+INFO:root: - End of bulk insert: 2020-04-22 12:22:03.354755
+INFO:root:>> END PROGRAM: 2020-04-22 12:22:03.354755
+INFO:root:>> START PROGRAM: 2020-04-22 12:28:42.759190
+INFO:root: - The browser was created
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-04-22 12:28:49.255964
