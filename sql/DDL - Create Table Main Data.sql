@@ -8,6 +8,11 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
+-- =============================================
+-- Author:		Andres Segura Tinoco
+-- Create date: 04/09/2020
+-- Description:	Main covid19 data
+-- =============================================
 CREATE TABLE [dbo].[covid19_data](
 	[country] [nvarchar](100) NOT NULL,
 	[datestamp] [datetime] NOT NULL,
@@ -27,5 +32,3 @@ CREATE TABLE [dbo].[covid19_data](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
-

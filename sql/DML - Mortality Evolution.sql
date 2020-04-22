@@ -18,3 +18,4 @@ SELECT a.*
 		  FROM [c19_data]) AS a
  WHERE a.[country] = 'Colombia'
  ORDER BY [datetime] ASC;
+GO

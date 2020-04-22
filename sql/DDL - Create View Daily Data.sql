@@ -1,26 +1,34 @@
 USE [DATABASE_NAME]
 GO
 
-/****** Object:  View [dbo].[v_daily_covid19_data]    Script Date: 4/21/2020 3:48:21 PM ******/
+/****** Object:  View [dbo].[v_daily_covid19_data]    Script Date: 4/22/2020 5:17:38 PM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-
+-- =============================================
+-- Author:		Andres Segura Tinoco
+-- Create date: 04/18/2020
+-- Description:	Daily covid 19 data view
+-- =============================================
 CREATE VIEW [dbo].[v_daily_covid19_data]
 AS
-SELECT a.country, CAST(a.datestamp AS date) AS [datestamp], a.total_cases, a.total_deaths, a.total_recovered,
-       a.active_cases, a.serious_critical, a.tot_cases_1m_pop, a.deaths_1m_pop, a.total_tests, a.tests_1m_pop
-  FROM [dbo].[covid19_data] AS a
- INNER JOIN
-      (SELECT [country], YEAR([datestamp]) AS [year], MONTH([datestamp]) AS [month], DAY([datestamp]) AS [day],
-			  MAX([datestamp]) AS [max_date]
-		 FROM [dbo].[covid19_data]
-		GROUP BY [country], YEAR([datestamp]), MONTH([datestamp]), DAY([datestamp])) AS b
-	ON a.country = b.country
-   AND a.datestamp = b.max_date;
+SELECT dt.[country],[date],[datestamp],[total_cases],[total_deaths],[total_recovered],[active_cases],
+	   [serious_critical],[tot_cases_1m_pop],[deaths_1m_pop],[total_tests],[tests_1m_pop]
+  FROM 
+	   (SELECT [country], CAST(a.[date] AS date) AS [date]
+	      FROM [dbo].[dim_date] AS a
+	     INNER JOIN
+			   (SELECT [country], CAST(MIN([datestamp]) AS date) AS [min_date], CAST(GETDATE() AS date) AS [max_date]
+				  FROM [dbo].[covid19_data]
+				 GROUP BY [country]) AS b
+			ON a.[date] BETWEEN b.min_date AND b.max_date) AS dd
+  OUTER APPLY
+	   (SELECT TOP 1 [country],[datestamp],[total_cases],[total_deaths],[total_recovered],[active_cases],[serious_critical],[tot_cases_1m_pop],[deaths_1m_pop],[total_tests],[tests_1m_pop]
+		  FROM [dbo].[covid19_data] AS b
+		 WHERE dd.[date] >= CAST(b.[datestamp] AS date)
+		   AND dd.[country] = b.country
+		 ORDER BY [datestamp] DESC) AS dt;
 GO
-
-
