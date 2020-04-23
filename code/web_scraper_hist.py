@@ -41,7 +41,7 @@ def read_csv_to_dict(filename):
     with open(filename, 'r', encoding='utf8') as f:
         rd = csv.reader(f, delimiter=',')
         for row in rd:
-            k, v = row
+            k, v, r = row
             if v != 'url':
                 country_list[k] = v
     
@@ -70,7 +70,7 @@ def get_country_data_count(db_login):
         
         # Countries with more daily data 
         query = '''
-                SELECT [country], COUNT(*) AS [count], MIN([datestamp]) AS [min_data]
+                SELECT [country], COUNT(*) AS [count], MIN([date]) AS [min_data]
                   FROM [dbo].[v_daily_covid19_data]
                  GROUP BY [country]
                  ORDER BY [count] DESC;
@@ -142,7 +142,7 @@ def web_scraping_hist(db_login, batch_size, threshold):
                   data_cols[2]: 'graph-active-cases-total'}
     
     # Get country url dict
-    country_url = read_csv_to_dict('../data/countries_url.csv')
+    country_url = read_csv_to_dict('../data/countries_info.csv')
     
     # Get country count dict
     country_count = get_country_data_count(db_login)

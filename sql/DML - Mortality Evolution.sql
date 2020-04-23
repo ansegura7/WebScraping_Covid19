@@ -1,21 +1,22 @@
--- Temporal data
+-- Temporal daily data
 WITH [c19_data] AS (
-	SELECT a.country, CAST(a.datestamp AS date) AS [datetime], a.total_cases, a.total_deaths, a.total_recovered,
-		   a.active_cases, a.serious_critical, a.tot_cases_1m_pop, a.deaths_1m_pop, a.total_tests, a.tests_1m_pop
-	  FROM [dbo].[covid19_data] AS a
+	SELECT [country], [total_cases], [total_deaths], ISNULL([total_recovered], 0) AS [total_recovered], [active_cases], ISNULL([serious_critical], 0) AS [serious_critical], 
+		   ISNULL([tot_cases_1m_pop], 0) AS [tot_cases_1m_pop], ISNULL([deaths_1m_pop], 0) AS [deaths_1m_pop], ISNULL([total_tests], 0) AS [total_tests], 
+		   ISNULL([tests_1m_pop], 0) AS [tests_1m_pop], [date], 
+		   (CASE WHEN total_cases > 0 THEN 100.0 * total_deaths / total_cases ELSE 0 END) AS [perc_deaths],
+		   (CASE WHEN total_tests > 0 THEN 100.0 * total_cases / total_tests ELSE 0 END) AS [perc_infection],
+		   [region]
+	  FROM [dbo].[v_daily_covid19_data] AS cd
 	 INNER JOIN
-		  (SELECT [country], YEAR([datestamp]) AS [year], MONTH([datestamp]) AS [month], DAY([datestamp]) AS [day],
-				  MAX([datestamp]) AS [max_date]
-			 FROM [dbo].[covid19_data]
-			GROUP BY [country], YEAR([datestamp]), MONTH([datestamp]), DAY([datestamp])) AS b
-		ON a.country = b.country
-	   AND a.datestamp = b.max_date)
+	       [dbo].[country_info] AS ci
+		ON cd.[country] = ci.[name]
+)
 
 -- Evolution by country of C19 mortality
 SELECT a.*
   FROM (
-		SELECT ROW_NUMBER() OVER(PARTITION BY [datetime] ORDER BY total_deaths DESC) AS row_number, *
+		SELECT *, ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_number]
 		  FROM [c19_data]) AS a
- WHERE a.[country] = 'Colombia'
- ORDER BY [datetime] ASC;
+  --WHERE a.[country] = 'China'
+  ORDER BY [date] ASC;
 GO
