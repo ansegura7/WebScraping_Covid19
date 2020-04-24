@@ -133,8 +133,8 @@ def merge_data(db_login, record_list):
     
     return result
 
-# DB function - Generate derived data as a CSV file
-def generate_data(db_login):
+# DB function - Generate current data as a CSV file
+def generate_current_data(db_login):
     result = False
     
     # Get database connection
@@ -143,17 +143,13 @@ def generate_data(db_login):
     try:
         cursor = cnxn.cursor()
         
-        # Latest data by country sorted by total_deaths
+        # Current data by country sorted by total_deaths
         query = '''
-                SELECT ROW_NUMBER() OVER(ORDER BY total_deaths DESC) AS row_number, a.country, a.total_cases, a.total_deaths, a.total_recovered, 
-                	   a.active_cases, a.serious_critical, a.tot_cases_1m_pop, a.deaths_1m_pop, a.total_tests, a.tests_1m_pop, a.datestamp
-                  FROM [dbo].[covid19_data] AS a
-                 WHERE a.[datestamp] = 
-                	(SELECT MAX(b.[datestamp])
-                	   FROM [dbo].[covid19_data] AS b
-                	  WHERE b.country = a.country);
+                SELECT ROW_NUMBER() OVER(ORDER BY total_deaths DESC, country) AS [row_number], country, total_cases, total_deaths, total_recovered, 
+                       active_cases, serious_critical, tot_cases_1m_pop, deaths_1m_pop, total_tests, tests_1m_pop, datestamp
+                  FROM [dbo].[v_current_covid19_data];
                 '''
-                
+        
         dt = cursor.execute(query).fetchall()
         
     except pyodbc.DatabaseError as e:
@@ -166,10 +162,60 @@ def generate_data(db_login):
         result = save_dt_to_csv(dt, filename, header)
             
         if result:
-            logging.info(' - Data saved in CSV file')
+            logging.info(' - Current data saved in CSV file')
         else:
-            logging.info(' - CSV file not created')
+            logging.info(' - Current data CSV file not created')
         
+    finally:
+        cursor.close()
+        
+    return result
+
+# DB function - Generate historical data as a CSV file
+def generate_historical_data(db_login):
+    result = False
+    
+    # Get database connection
+    cnxn = pyodbc.connect(driver=db_login['driver'], server=db_login['server'], database=db_login['database'], trusted_connection=db_login['trusted_connection'])
+    
+    try:
+        cursor = cnxn.cursor()
+        
+        # Historical data by country sorted by total_deaths
+        query = '''
+                WITH [c19_data] AS (
+                	SELECT [country], [total_cases], [total_deaths], ISNULL([total_recovered], 0) AS [total_recovered], [active_cases], ISNULL([serious_critical], 0) AS [serious_critical], 
+                		   ISNULL([tot_cases_1m_pop], 0) AS [tot_cases_1m_pop], ISNULL([deaths_1m_pop], 0) AS [deaths_1m_pop], ISNULL([total_tests], 0) AS [total_tests], 
+                		   ISNULL([tests_1m_pop], 0) AS [tests_1m_pop], [date], 
+                		   CAST(CASE WHEN total_cases > 0 THEN 100.0 * total_deaths / total_cases ELSE 0 END AS decimal(5, 2)) AS [perc_deaths],
+                		   CAST(CASE WHEN total_tests > 0 THEN 100.0 * total_cases / total_tests ELSE 0 END AS decimal(5, 2)) AS [perc_infection],
+                		   [region]
+                	  FROM [dbo].[v_daily_covid19_data] AS cd
+                	 INNER JOIN
+                	       [dbo].[country_info] AS ci
+                		ON cd.[country] = ci.[name]
+                )
+                SELECT [country], [total_cases], [total_deaths], [total_recovered], [active_cases], [serious_critical], [tot_cases_1m_pop], [deaths_1m_pop], [total_tests],  
+                       [tests_1m_pop], [date], [perc_deaths], [perc_infection], [region], ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_number]
+                  FROM [c19_data]
+                 ORDER BY [date] ASC;
+                '''
+        
+        dt = cursor.execute(query).fetchall()
+        
+    except pyodbc.DatabaseError as e:
+        logging.error(' - Pyodbc error: ' + str(e))
+    else:
+        # Save data table (list format) to CSV file
+        filename = '../data/historical_data.csv'
+        header = ['country', 'total_cases', 'total_deaths', 'total_recovered', 'active_cases', 'serious_critical', 'tot_cases_1m_pop', 'deaths_1m_pop', 'total_tests', 'tests_1m_pop', 'date', 'perc_deaths', 'perc_infection', 'region', 'row_number']
+        result = save_dt_to_csv(dt, filename, header)
+        
+        if result:
+            logging.info(' - Historical data saved in CSV file')
+        else:
+            logging.info(' - Historical data CSV file not created')
+            
     finally:
         cursor.close()
         
@@ -252,7 +298,8 @@ result = merge_data(db_login, data)
 
 # 4. Generate derived data
 if result:
-    generate_data(db_login)
+    generate_current_data(db_login)
+    generate_historical_data(db_login)
 
 logging.info(">> END PROGRAM: " + str(datetime.now()))
 logging.shutdown()

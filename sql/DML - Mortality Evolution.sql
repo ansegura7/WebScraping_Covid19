@@ -13,10 +13,9 @@ WITH [c19_data] AS (
 )
 
 -- Evolution by country of C19 mortality
-SELECT a.*
-  FROM (
-		SELECT *, ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_number]
-		  FROM [c19_data]) AS a
+SELECT *, ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_number]
+  FROM [c19_data]
   --WHERE a.[country] = 'China'
-  ORDER BY [date] ASC;
+  --WHERE a.[date] = CAST(GETDATE() AS date)
+ ORDER BY [date] ASC;
 GO
