@@ -158,7 +158,7 @@ def generate_current_data(db_login):
         
         # Save data table (list format) to CSV file
         filename = '../data/current_data.csv'
-        header = ['row_number', 'country', 'total_cases', 'total_deaths', 'total_recovered', 'active_cases', 'serious_critical', 'tot_cases_1m_pop', 'deaths_1m_pop', 'total_tests', 'tests_1m_pop', 'datestamp']
+        header = [column[0] for column in cursor.description]
         result = save_dt_to_csv(dt, filename, header)
             
         if result:
@@ -196,7 +196,7 @@ def generate_historical_data(db_login):
                 		ON cd.[country] = ci.[name]
                 )
                 SELECT [country], [total_cases], [total_deaths], [total_recovered], [active_cases], [serious_critical], [tot_cases_1m_pop], [deaths_1m_pop], [total_tests],  
-                       [tests_1m_pop], [date], [perc_deaths], [perc_infection], [region], ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_number]
+                       [tests_1m_pop], [date], [perc_deaths], [perc_infection], ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_number], [region]
                   FROM [c19_data]
                  ORDER BY [date] ASC;
                 '''
@@ -208,9 +208,9 @@ def generate_historical_data(db_login):
     else:
         # Save data table (list format) to CSV file
         filename = '../data/historical_data.csv'
-        header = ['country', 'total_cases', 'total_deaths', 'total_recovered', 'active_cases', 'serious_critical', 'tot_cases_1m_pop', 'deaths_1m_pop', 'total_tests', 'tests_1m_pop', 'date', 'perc_deaths', 'perc_infection', 'region', 'row_number']
+        header = [column[0] for column in cursor.description]
         result = save_dt_to_csv(dt, filename, header)
-        
+                
         if result:
             logging.info(' - Historical data saved in CSV file')
         else:
