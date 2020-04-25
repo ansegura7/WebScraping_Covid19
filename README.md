@@ -4,6 +4,11 @@ Web scraping is the (generally automatic) process of collecting semi-structured 
 ## Motivation
 Create a web scraper bot to obtain data on confirmed cases and deaths of Covid-19, in order to analyze them.
 
+## Process
+1. Web scraping with Selenium to obtain the historical data. It only runs 1 time.
+2. Web scraping with BeautifulSoup to obtain daily data. Runs every day each hour.
+3. Export the historical daily data in a CSV file, to feed the dashboard in PowerBI.
+
 ## Data
 The data obtained through web scraping are:
 
@@ -19,11 +24,11 @@ The data obtained through web scraping are:
 | deaths_1m_pop | Number of deaths per one million population |
 | total_tests | Total number of tests |
 | tests_1m_pop | Number of tests per one million population |
-| datestamp | Data timestamp |
+| datestamp | Data timestamp with UTC -5 time zone |
 
 The latest data reported by country can be seen at the following <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/data/current_data.csv" target="_blank" >link</a>.
 
-And <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DDL%20-%20Create%20Main%20Table.sql" target="_blank" >here</a>, you can find the definition of the table where the scraped data is stored.
+And <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DDL%20-%20Create%20Table%20Main%20Data.sql" target="_blank" >here</a>, you can find the definition of the table where the scraped data is stored.
 
 ## Dependencies
 The project was carried out with the latest version of <a href="https://www.anaconda.com/distribution/" target="_blank" >Anaconda</a> on Windows.
@@ -97,6 +102,7 @@ In order to automate the process, a Task can be created in the **Windows Task Sc
 
 ## Documentation
 Below, some useful links:
+- <a href="https://www.codeproject.com/Articles/647950/Create-and-Populate-Date-Dimension-for-Data-Wareho" target="_blank" >Create and Populate Date Dimension</a>
 - <a href="https://realpython.com/tutorials/web-scraping/" target="_blank" >Python Web Scraping Tutorials</a>
 - <a href="https://papelesdeinteligencia.com/herramientas-de-web-scraping/" target="_blank" >10 Web Scraping Tools (Spanish)</a>
 - <a href="https://www.quora.com/Why-can-t-I-run-Python-in-CMD-but-can-in-Anaconda-Prompt/" target="_blank" >Run Anaconda Python in CMD</a>

@@ -145,8 +145,8 @@ def generate_current_data(db_login):
         
         # Current data by country sorted by total_deaths
         query = '''
-                SELECT ROW_NUMBER() OVER(ORDER BY total_deaths DESC, country) AS [row_number], country, total_cases, total_deaths, total_recovered, 
-                       active_cases, serious_critical, tot_cases_1m_pop, deaths_1m_pop, total_tests, tests_1m_pop, CONVERT(varchar, [date], 101) AS [date]
+                SELECT ROW_NUMBER() OVER(ORDER BY total_deaths DESC, country) AS [row_index], country, CONVERT(varchar, [date], 101) AS [date], total_cases, 
+                	   total_deaths, total_recovered, active_cases, serious_critical, tot_cases_1m_pop, deaths_1m_pop, total_tests, tests_1m_pop, [datestamp]
                   FROM [dbo].[v_current_covid19_data];
                 '''
         
