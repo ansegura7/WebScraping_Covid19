@@ -134,7 +134,7 @@ def web_scraping_hist(db_login, batch_size, threshold):
     record_list = dict()
     
     # Web data vars    
-    drive_path = 'C:/Users/Andres/Documents/GitHub/WebScraping_Covid19/drive/chromedriver.exe'
+    drive_path = '../driver/chromedriver.exe'
     home_url = 'https://www.worldometers.info/coronavirus/'
     data_cols = ['total_cases', 'total_deaths', 'active_cases']
     chart_list = {data_cols[0]: 'coronavirus-cases-linear',
