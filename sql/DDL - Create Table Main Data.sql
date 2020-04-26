@@ -1,7 +1,7 @@
 USE [DATABASE_NAME]
 GO
 
-/****** Object:  Table [dbo].[covid19_data]    Script Date: 4/20/2020 8:56:25 AM ******/
+/****** Object:  Table [dbo].[covid19_data]    Script Date: 4/26/2020 1:53:38 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -15,7 +15,7 @@ GO
 -- =============================================
 CREATE TABLE [dbo].[covid19_data](
 	[country] [nvarchar](100) NOT NULL,
-	[datestamp] [datetime] NOT NULL,
+	[datestamp] [datetimeoffset](7) NOT NULL,
 	[total_cases] [int] NULL,
 	[total_deaths] [int] NULL,
 	[total_recovered] [int] NULL,

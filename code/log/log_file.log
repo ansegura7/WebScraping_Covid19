@@ -1051,3 +1051,21 @@ INFO:root: - Data stored in the database: 27
 INFO:root: - Current data saved in CSV file
 INFO:root: - Historical data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-04-26 10:00:05.215209
+INFO:root:>> START PROGRAM: 2020-04-26 12:00:03.121040
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 34
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 12:00:04.964766
+INFO:root:>> START PROGRAM: 2020-04-26 14:00:03.092938
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 25
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 14:00:05.824165

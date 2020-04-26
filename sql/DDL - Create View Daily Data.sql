@@ -1,7 +1,7 @@
 USE [DATABASE_NAME]
 GO
 
-/****** Object:  View [dbo].[v_daily_covid19_data]    Script Date: 4/22/2020 5:17:38 PM ******/
+/****** Object:  View [dbo].[v_daily_covid19_data]    Script Date: 4/26/2020 2:26:50 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -21,7 +21,7 @@ SELECT dt.[country],[date],[datestamp],[total_cases],[total_deaths],[total_recov
 	   (SELECT [country], CAST(a.[date] AS date) AS [date]
 	      FROM [dbo].[dim_date] AS a
 	     INNER JOIN
-			   (SELECT [country], CAST(MIN([datestamp]) AS date) AS [min_date], CAST(GETDATE() AS date) AS [max_date]
+			   (SELECT [country], CAST(MIN(SWITCHOFFSET([datestamp], '+00:00')) AS date) AS [min_date], CAST(SWITCHOFFSET(SYSDATETIMEOFFSET(), '+00:00') AS date) AS [max_date]
 				  FROM [dbo].[covid19_data]
 				 GROUP BY [country]) AS b
 			ON a.[date] BETWEEN b.min_date AND b.max_date) AS dd
