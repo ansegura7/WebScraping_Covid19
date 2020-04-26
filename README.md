@@ -5,8 +5,8 @@ Web scraping is the (generally automatic) process of collecting semi-structured 
 Create a web scraper bot to obtain data on confirmed cases and deaths of Covid-19, in order to analyze them.
 
 ## Process
-1. Web scraping with Selenium to obtain the historical data. It only runs 1 time.
-2. Web scraping with BeautifulSoup to obtain daily data. Runs every day each hour.
+1. Run the Web Scraper with Selenium to obtain the historical data. It only runs 1 time.
+2. Run the Web Scraper with BeautifulSoup to obtain daily data (every day every x hours).
 3. Export the historical daily data in a CSV file, to feed the dashboard in PowerBI.
 
 ## Data
@@ -62,6 +62,8 @@ The specific Python 3.7 libraries used are:
   from selenium import webdriver
   from selenium.webdriver.chrome.options import Options
 ```
+
+**Note:**  In order to use the *web scraper* that fetches historical data, you may need to download the <a href="https://chromedriver.chromium.org/downloads" target="_blank" >Chrome driver</a> that uses the Selenium library and put it in the *driver* folder.
 
 ## Run Bot
 There are several ways to run this web scraper bot on Windows:

@@ -970,3 +970,84 @@ INFO:root: - Data stored in the database: 15
 INFO:root: - Current data saved in CSV file
 INFO:root: - Historical data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-04-25 16:00:04.528224
+INFO:root:>> START PROGRAM: 2020-04-25 18:00:02.424239
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 18
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-25 18:00:04.544537
+INFO:root:>> START PROGRAM: 2020-04-25 20:00:02.295187
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 19
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-25 20:00:04.638931
+INFO:root:>> START PROGRAM: 2020-04-25 22:00:02.546561
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 16
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-25 22:00:14.342198
+INFO:root:>> START PROGRAM: 2020-04-26 00:00:01.280024
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 4
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 00:00:03.405022
+INFO:root:>> START PROGRAM: 2020-04-26 02:00:02.305230
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 14
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 02:00:04.244168
+INFO:root:>> START PROGRAM: 2020-04-26 04:00:03.188568
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 20
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 04:00:05.360437
+INFO:root:>> START PROGRAM: 2020-04-26 06:00:02.958062
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 30
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 06:00:05.036195
+INFO:root:>> START PROGRAM: 2020-04-26 08:00:03.318979
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 29
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 08:00:05.334596
+INFO:root:>> START PROGRAM: 2020-04-26 10:00:03.082209
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 27
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 10:00:05.215209
