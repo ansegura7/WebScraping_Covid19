@@ -1069,3 +1069,12 @@ INFO:root: - Data stored in the database: 25
 INFO:root: - Current data saved in CSV file
 INFO:root: - Historical data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-04-26 14:00:05.824165
+INFO:root:>> START PROGRAM: 2020-04-26 15:25:16.491839
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 210
+INFO:root: - Data stored in the database: 9
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-04-26 15:25:19.290511

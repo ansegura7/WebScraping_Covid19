@@ -10,6 +10,8 @@
 import logging
 import yaml
 import csv
+import pytz
+from pytz import timezone
 from datetime import datetime
 
 # Database libraries
@@ -145,7 +147,7 @@ def generate_current_data(db_login):
         
         # Current data by country sorted by total_deaths
         query = '''
-                SELECT ROW_NUMBER() OVER(ORDER BY total_deaths DESC, country) AS [row_index], country, CONVERT(varchar, [date], 101) AS [date], total_cases, 
+                SELECT ROW_NUMBER() OVER(ORDER BY total_deaths DESC, total_cases DESC) AS [row_index], country, CONVERT(varchar, [date], 101) AS [date], total_cases, 
                 	   total_deaths, total_recovered, active_cases, serious_critical, tot_cases_1m_pop, deaths_1m_pop, total_tests, tests_1m_pop, [datestamp]
                   FROM [dbo].[v_current_covid19_data];
                 '''
@@ -225,6 +227,9 @@ def generate_historical_data(db_login):
 def web_scraping_data():
     record_list = []
     
+    # Datetime with local TimeZone
+    local_tz = timezone(pytz.country_timezones['co'][0])
+    
     # Web data vars
     url = 'https://www.worldometers.info/coronavirus/'
     doc_format = 'lxml'
@@ -270,7 +275,7 @@ def web_scraping_data():
                                 'deaths_1m_pop': parse_num(cols[9].text),
                                 'total_tests': parse_num(cols[10].text),
                                 'tests_1m_pop': parse_num(cols[11].text),
-                                'datestamp': datetime.now()
+                                'datestamp': local_tz.localize(datetime.now()).isoformat()
                             }
                             record_list.append(list(record.values()))
                 
