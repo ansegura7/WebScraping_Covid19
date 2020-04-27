@@ -10,6 +10,8 @@
 import logging
 import yaml
 import csv
+import pytz
+from pytz import timezone
 from datetime import datetime
 
 # Database libraries
@@ -35,14 +37,26 @@ def data_quality(data, top_date):
     return new_data
 
 # Util function - Read CSV file and save it in a dictionary
-def read_csv_to_dict(filename):
+def read_csv_to_dict(filename, key_name, val_name):
     country_list = dict()
+    ix_key_name = -1
+    ix_val_name = -1
     
-    with open(filename, 'r', encoding='utf8') as f:
+    with open(filename, 'r', encoding='utf-8-sig') as f:
         rd = csv.reader(f, delimiter=',')
+        
         for row in rd:
-            k, v, r = row
-            if v != 'url':
+            # Get variables index
+            if ix_key_name == -1 and ix_val_name == -1:
+                if key_name in row:
+                    ix_key_name = row.index(key_name)
+                if val_name in row:
+                    ix_val_name = row.index(val_name)
+                
+            elif ix_key_name != -1 and ix_val_name != -1:
+                # Get data
+                k = row[ix_key_name]
+                v = row[ix_val_name]
                 country_list[k] = v
     
     return country_list
@@ -133,6 +147,9 @@ def bulk_save_data(db_login, record_list):
 def web_scraping_hist(db_login, batch_size, threshold):
     record_list = dict()
     
+    # Datetime with local TimeZone
+    local_tz = timezone(pytz.country_timezones['co'][0])
+    
     # Web data vars    
     drive_path = '../driver/chromedriver.exe'
     home_url = 'https://www.worldometers.info/coronavirus/'
@@ -142,7 +159,7 @@ def web_scraping_hist(db_login, batch_size, threshold):
                   data_cols[2]: 'graph-active-cases-total'}
     
     # Get country url dict
-    country_url = read_csv_to_dict('../data/countries_info.csv')
+    country_url = read_csv_to_dict('../data/country_info.csv', 'country', 'url')
     
     # Get country count dict
     country_count = get_country_data_count(db_login)
@@ -171,7 +188,6 @@ def web_scraping_hist(db_login, batch_size, threshold):
         for name, url in country_url.items():
             count = country_count[name]['count']
             min_date = country_count[name]['min_date']
-            # print('name:', name, ', url:', url, ', count:', count, ', min_date:', min_date)
             
             # Country min date validation
             if count < threshold:
@@ -205,7 +221,12 @@ def web_scraping_hist(db_login, batch_size, threshold):
                     dict1 = country_data.get(data_cols[0], {})
                     dict2 = country_data.get(data_cols[1], {})
                     dict3 = country_data.get(data_cols[2], {})
-                    country_list = [(name, k, dict1.get(k, 0), dict2.get(k, 0), dict3.get(k, 0)) for k, v in dict1.items()]
+                    
+                    country_list = []
+                    for k, v in dict1.items():
+                        d = local_tz.localize(k).isoformat()
+                        row = (name, d, dict1.get(k, 0), dict2.get(k, 0), dict3.get(k, 0))
+                        country_list.append(row)
                     
                     # Temporary saved
                     record_list[name] = country_list

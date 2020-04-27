@@ -191,14 +191,14 @@ def generate_historical_data(db_login):
                 		   ISNULL([tests_1m_pop], 0) AS [tests_1m_pop], CONVERT(varchar, [date], 101) AS [date], 
                 		   CAST(CASE WHEN total_cases > 0 THEN 100.0 * total_deaths / total_cases ELSE 0 END AS decimal(5, 2)) AS [perc_deaths],
                 		   CAST(CASE WHEN total_tests > 0 THEN 100.0 * total_cases / total_tests ELSE 0 END AS decimal(5, 2)) AS [perc_infection],
-                		   [region]
+                		   [region], [subregion]
                 	  FROM [dbo].[v_daily_covid19_data] AS cd
                 	 INNER JOIN
                 	       [dbo].[country_info] AS ci
                 		ON cd.[country] = ci.[name]
                 )
                 SELECT [country], [total_cases], [total_deaths], [total_recovered], [active_cases], [serious_critical], [tot_cases_1m_pop], [deaths_1m_pop], [total_tests],  
-                       [tests_1m_pop], [date], [perc_deaths], [perc_infection], ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_index], [region]
+                       [tests_1m_pop], [date], [perc_deaths], [perc_infection], ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_index], [region], [subregion]
                   FROM [c19_data]
                  ORDER BY [date] ASC;
                 '''
@@ -261,11 +261,10 @@ def web_scraping_data():
                 for row in rows:
                     cols = row.findAll('td')
                     if len(cols) == 13:
-                        if 'country' in str(cols[0].a):
-                            # print(cols[0].a.text, ',', cols[0].a.get('href'))
+                        if 'country' in str(cols[0].a):                            
                             
                             record = {
-                                'country': cols[0].a.text,
+                                'country': cols[0].a.text.strip(),
                                 'total_cases': parse_num(cols[1].text),
                                 'total_deaths': parse_num(cols[3].text),
                                 'total_recovered': parse_num(cols[5].text),
