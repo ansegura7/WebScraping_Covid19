@@ -20,11 +20,21 @@ The data obtained through web scraping are:
 | total_recovered | Total number of people recovered |
 | active_cases | Number of active cases |
 | serious_critical | Number of critical cases |
+| total_tests | Total number of tests |
 | tot_cases_1m_pop | Number of cases per one million population |
 | deaths_1m_pop | Number of deaths per one million population |
-| total_tests | Total number of tests |
 | tests_1m_pop | Number of tests per one million population |
 | datestamp | Data timestamp with UTC -5 time zone |
+
+Furthermore, to carry out the complete data analysis and its respective visualization, other variables had to be derived, such as:
+
+| Variable | Description | Definition |
+| --- | --- | --- |
+| perc_deaths | Percentage of deaths | total_deaths * 100 / total_cases |
+| perc_infection | Percentage of infections or contagions | total_cases * 100 / total_tests |
+| new_total_cases | New daily cases | total_cases_today - total_cases_yest |
+| new_total_deaths | New daily deaths | total_deaths_today - total_deaths_yest |
+| new_active_cases | New daily active cases | active_cases_today - active_cases_yest |
 
 The latest data reported by country can be seen at the following <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/data/current_data.csv" target="_blank" >link</a>.
 
@@ -103,6 +113,11 @@ In order to automate the process, a Task can be created in the **Windows Task Sc
 3. In the **Action** tab, select the .bat file and the folder from where the Task will be executed.
 
 ![task-sch-3-img](https://github.com/ansegura7/WebScraping_Covid19/blob/master/img/task-sch-3.PNG?raw=true)
+
+## DataViz
+Next, the dashboard that was created, to be able to visually analyze the collected data.
+
+![dataviz-img](https://github.com/ansegura7/WebScraping_Covid19/blob/master/img/data-viz.gif?raw=true)
 
 ## Documentation
 Below, some useful links:
