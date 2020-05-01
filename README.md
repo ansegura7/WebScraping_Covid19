@@ -1,6 +1,18 @@
 # Web Scraping - Covid19 Data
 Web scraping is the (generally automatic) process of collecting semi-structured data from the web, filtering and storing it, and then using it in another process.
 
+## Table of Contents
+* [Motivation](#Motivation)
+* [Process](#Process)
+* [Data](#Data)
+* [Dependencies](#Dependencies)
+* [Run Bot](#Run-Bot)
+* [DataViz](#DataViz)
+* [Documentation](#Documentation)
+* [Contributing and Feedback](#Contributing-and-Feedback)
+* [Author](#Author)
+* [License](#License)
+
 ## Motivation
 Create a web scraper bot to obtain data on confirmed cases and deaths of Covid-19, in order to analyze them.
 
