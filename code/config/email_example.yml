@@ -1,0 +1,4 @@
+server: smtp.gmail.com
+port: 465
+account: my@gmail.com
+password: P@$$w0rd

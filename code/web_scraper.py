@@ -14,6 +14,12 @@ import pytz
 from pytz import timezone
 from datetime import datetime
 
+# Email libraries
+import smtplib
+import ssl
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
 # Database libraries
 import pyodbc
 
@@ -57,15 +63,55 @@ def save_dt_to_csv(dt, filename, header):
     
     return result
 
-# DB function - Get database credentials
-def get_db_credentials():
-    db_login = dict()
-    yaml_path = 'config\database.yml'
+# Util function - Read dict from yaml file
+def get_dict_from_yaml(yaml_path):
+    result = dict()
     
     with open(yaml_path) as f:
         yaml_file = f.read()
-        db_login = yaml.load(yaml_file, Loader=yaml.FullLoader)
+        result = yaml.load(yaml_file, Loader=yaml.FullLoader)
     
+    return result
+
+# DB function - Get email server credentials
+def get_email_credentials():
+    yaml_path = 'config\email.yml'
+    email_login = get_dict_from_yaml(yaml_path)
+    return email_login
+
+# Util function - Generic function that sends an email via SMTP
+def smtp_send_email(msg):
+    result = False
+    
+    try:
+        # Read SMTP server credentials
+        email_login = get_email_credentials()
+        server_name = email_login['server']
+        port = email_login['port']
+        sent_from = email_login['account']
+        password = email_login['password']
+        context = ssl.create_default_context()
+
+        # Send SMTP email        
+        with smtplib.SMTP_SSL(server_name, port, context=context) as server:
+            server.login(sent_from, password)
+            server.send_message(msg)
+            result = True
+        
+    except smtplib.SMTPException as e:
+        print(' - Error sending SMTP email: ' + str(e))
+        logging.error(' - Error sending SMTP email: ' + str(e))
+    
+    except Exception:
+        print(' - Generic SMTP error')
+        logging.error(' - Generic SMTP error')
+    
+    return result
+
+# DB function - Get database credentials
+def get_db_credentials():
+    yaml_path = 'config\database.yml'
+    db_login = get_dict_from_yaml(yaml_path)
     return db_login
 
 # DB function - Returns the country list
@@ -255,6 +301,26 @@ def generate_historical_data(db_login):
         
     return result
 
+# Send notification email function
+def send_notification_email(country_list):
+    
+    # Create a message
+    msg = MIMEMultipart()
+    
+    # Setup the parameters of the message
+    msg['From'] = 'DevOps <ansegura.col@gmail.com>'
+    msg['To'] = 'Segura Andres <seguraandres7@gmail.com>'
+    msg['Subject'] = 'DevOps - New Country'
+    
+    # Add in the message body
+    message = 'Daily data was saved for new countries.\nBasic information for the following countries should be added: %s' % ', '.join(country_list)
+    msg.attach(MIMEText(message, 'plain'))
+    
+    # Sending email
+    result = smtp_send_email(msg)
+    
+    return result
+
 # Web Scraping function
 def web_scraping_data(db_login):
     record_list = []
@@ -325,6 +391,7 @@ def web_scraping_data(db_login):
         # Log new country list
         if len(new_country_list):
             country_string = ', '.join(new_country_list)
+            send_notification_email(new_country_list)
             logging.info(' - Data was saved for new countries: ' + country_string)
     
     # Return data

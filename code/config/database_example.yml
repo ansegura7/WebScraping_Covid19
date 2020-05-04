@@ -1,4 +1,4 @@
-driver: '{DB_SERVER_TYPE}'
+driver: '{SQL Server}'
 server: .\SERVER_NAME
 database: DATABASE_NAME
 trusted_connection: 'yes'
