@@ -68,6 +68,35 @@ def get_db_credentials():
     
     return db_login
 
+# DB function - Returns the country list
+def get_country_list(db_login):
+    country_list = []
+    
+    # Get database connection
+    cnxn = pyodbc.connect(driver=db_login['driver'], server=db_login['server'], database=db_login['database'], trusted_connection=db_login['trusted_connection'])
+    
+    try:
+        cursor = cnxn.cursor()
+        
+        # Countries with more daily data 
+        query = '''
+                SELECT [name]
+                  FROM [dbo].[country_info]
+                 ORDER BY [name];
+                '''
+        
+        dt = cursor.execute(query).fetchall()
+        for row in dt:
+            country = row[0]
+            country_list.append(country)
+        
+    except pyodbc.DatabaseError as e:
+        logging.error(' - Pyodbc error: ' + str(e))
+    finally:
+        cursor.close()
+    
+    return country_list
+
 # DB function - Merge a list records in the MS SQL Server table
 def merge_data(db_login, record_list):
     result = False
@@ -227,7 +256,7 @@ def generate_historical_data(db_login):
     return result
 
 # Web Scraping function
-def web_scraping_data():
+def web_scraping_data(db_login):
     record_list = []
     
     # Datetime with local TimeZone
@@ -237,6 +266,10 @@ def web_scraping_data():
     url = 'https://www.worldometers.info/coronavirus/'
     doc_format = 'lxml'
     id_main_table = 'main_table_countries_today'
+    
+    # Get country list
+    country_list = get_country_list(db_login)
+    new_country_list = []
     
     try:
         hdr = {'User-Agent': 'Mozilla/5.0'}
@@ -263,27 +296,36 @@ def web_scraping_data():
             if len(rows):
                 for row in rows:
                     cols = row.findAll('td')
-                    if len(cols) == 13:
-                        if 'country' in str(cols[0].a):                            
-                            
-                            record = {
-                                'country': cols[0].a.text.strip(),
-                                'total_cases': parse_num(cols[1].text),
-                                'total_deaths': parse_num(cols[3].text),
-                                'total_recovered': parse_num(cols[5].text),
-                                'active_cases': parse_num(cols[6].text),
-                                'serious_critical': parse_num(cols[7].text),
-                                'tot_cases_1m_pop': parse_num(cols[8].text),
-                                'deaths_1m_pop': parse_num(cols[9].text),
-                                'total_tests': parse_num(cols[10].text),
-                                'tests_1m_pop': parse_num(cols[11].text),
-                                'datestamp': local_tz.localize(datetime.now()).isoformat()
-                            }
-                            record_list.append(list(record.values()))
+                    
+                    if len(cols) == 13 and 'country' in str(cols[0].a):                            
+                        curr_country = cols[0].a.text.strip()
+                        record = {
+                            'country': curr_country,
+                            'total_cases': parse_num(cols[1].text),
+                            'total_deaths': parse_num(cols[3].text),
+                            'total_recovered': parse_num(cols[5].text),
+                            'active_cases': parse_num(cols[6].text),
+                            'serious_critical': parse_num(cols[7].text),
+                            'tot_cases_1m_pop': parse_num(cols[8].text),
+                            'deaths_1m_pop': parse_num(cols[9].text),
+                            'total_tests': parse_num(cols[10].text),
+                            'tests_1m_pop': parse_num(cols[11].text),
+                            'datestamp': local_tz.localize(datetime.now()).isoformat()
+                        }
+                        record_list.append(list(record.values()))
+                        
+                        # If it's a new country...
+                        if curr_country not in country_list:
+                            new_country_list.append(curr_country)
                 
                 logging.info(' - The data was found')
             else:
                 logging.info(' - The data was not found')
+        
+        # Log new country list
+        if len(new_country_list):
+            country_string = ', '.join(new_country_list)
+            logging.info(' - Data was saved for new countries: ' + country_string)
     
     # Return data
     return record_list
@@ -298,7 +340,7 @@ logging.info(">> START PROGRAM: " + str(datetime.now()))
 db_login = get_db_credentials()
 
 # 2. Get last data
-data = web_scraping_data()
+data = web_scraping_data(db_login)
 
 # 3. Store data
 result = merge_data(db_login, data)
