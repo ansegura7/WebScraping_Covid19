@@ -6,10 +6,11 @@
     Source: https://www.worldometers.info/coronavirus/
 """
 
+# Import custom libraries
+import util_lib as ul
+
 # Import util libraries
 import logging
-import yaml
-import csv
 import pytz
 from pytz import timezone
 from datetime import datetime
@@ -30,53 +31,10 @@ from urllib.error import HTTPError
 from urllib.error import URLError
 from bs4 import BeautifulSoup
 
-# Util function - Converts a string to a number (int or float) 
-def parse_num(n):
-    v = 0
-    
-    if n == 'N/A':
-        v = -1
-    else:
-        n = n.replace(',', '').replace('+', '').strip()
-        
-        if '.' in n:
-            v = float(n)
-        elif n != '':
-            v = int(n)
-    
-    return v
-
-# Util function - Save datatable (list format) to CSV file
-def save_dt_to_csv(dt, filename, header):
-    result = False
-
-    # Validating data
-    if dt and len(dt):
-        
-        # Saving data in CSV file
-        with open(filename, 'w', encoding='utf8', newline='') as f:
-            wr = csv.writer(f, delimiter=',')
-            wr.writerow(header)
-            for row in dt:
-                wr.writerow(row)
-            result = True
-    
-    return result
-
-# Util function - Read dict from yaml file
-def get_dict_from_yaml(yaml_path):
-    result = dict()
-    
-    with open(yaml_path) as f:
-        yaml_file = f.read()
-        result = yaml.load(yaml_file, Loader=yaml.FullLoader)
-    
-    return result
-
 # DB function - Get email server credentials
 def get_email_credentials():
     yaml_path = 'config\email.yml'
-    email_login = get_dict_from_yaml(yaml_path)
+    email_login = ul.get_dict_from_yaml(yaml_path)
     return email_login
 
 # Util function - Generic function that sends an email via SMTP
@@ -111,7 +69,7 @@ def smtp_send_email(msg):
 # DB function - Get database credentials
 def get_db_credentials():
     yaml_path = 'config\database.yml'
-    db_login = get_dict_from_yaml(yaml_path)
+    db_login = ul.get_dict_from_yaml(yaml_path)
     return db_login
 
 # DB function - Returns the country list
@@ -236,8 +194,8 @@ def generate_current_data(db_login):
         # Save data table (list format) to CSV file
         filename = '../data/current_data.csv'
         header = [column[0] for column in cursor.description]
-        result = save_dt_to_csv(dt, filename, header)
-            
+        result = ul.save_data_to_csv(dt, filename, header)
+        
         if result:
             logging.info(' - Current data saved in CSV file')
         else:
@@ -289,8 +247,8 @@ def generate_historical_data(db_login):
         # Save data table (list format) to CSV file
         filename = '../data/historical_data.csv'
         header = [column[0] for column in cursor.description]
-        result = save_dt_to_csv(dt, filename, header)
-                
+        result = ul.save_data_to_csv(dt, filename, header)
+        
         if result:
             logging.info(' - Historical data saved in CSV file')
         else:
@@ -367,15 +325,15 @@ def web_scraping_data(db_login):
                         curr_country = cols[0].a.text.strip()
                         record = {
                             'country': curr_country,
-                            'total_cases': parse_num(cols[1].text),
-                            'total_deaths': parse_num(cols[3].text),
-                            'total_recovered': parse_num(cols[5].text),
-                            'active_cases': parse_num(cols[6].text),
-                            'serious_critical': parse_num(cols[7].text),
-                            'tot_cases_1m_pop': parse_num(cols[8].text),
-                            'deaths_1m_pop': parse_num(cols[9].text),
-                            'total_tests': parse_num(cols[10].text),
-                            'tests_1m_pop': parse_num(cols[11].text),
+                            'total_cases': ul.parse_num(cols[1].text),
+                            'total_deaths': ul.parse_num(cols[3].text),
+                            'total_recovered': ul.parse_num(cols[5].text),
+                            'active_cases': ul.parse_num(cols[6].text),
+                            'serious_critical': ul.parse_num(cols[7].text),
+                            'tot_cases_1m_pop': ul.parse_num(cols[8].text),
+                            'deaths_1m_pop': ul.parse_num(cols[9].text),
+                            'total_tests': ul.parse_num(cols[10].text),
+                            'tests_1m_pop': ul.parse_num(cols[11].text),
                             'datestamp': local_tz.localize(datetime.now()).isoformat()
                         }
                         record_list.append(list(record.values()))

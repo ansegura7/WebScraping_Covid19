@@ -1,3 +1,4 @@
 code/config/database.yml
 code/config/email.yml
 *.exe
+*.pyc

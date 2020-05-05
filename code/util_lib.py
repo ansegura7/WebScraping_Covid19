@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+"""
+    Created By: Andres Segura Tinoco
+    Created On: May 05, 2020
+    Description: Library with utility functions
+"""
+
+# Import util libraries
+import yaml
+import csv
+
+############################
+### Start Util Functions ###
+############################
+
+# Util function - Converts a string to a number (int or float) 
+def parse_num(n):
+    v = 0
+    
+    if n == 'N/A':
+        v = -1
+    else:
+        n = n.replace(',', '').replace('+', '').strip()
+        
+        if '.' in n:
+            v = float(n)
+        elif n != '':
+            v = int(n)
+    
+    return v
+
+# Util function - Read dict from yaml file
+def get_dict_from_yaml(yaml_path):
+    result = dict()
+    
+    with open(yaml_path) as f:
+        yaml_file = f.read()
+        result = yaml.load(yaml_file, Loader=yaml.FullLoader)
+    
+    return result
+
+# Util function - Save data list to CSV file
+def save_data_to_csv(dt, filename, header):
+    result = False
+
+    # Validating data
+    if dt and len(dt):
+        
+        # Saving data in CSV file
+        with open(filename, 'w', encoding='utf8', newline='') as f:
+            wr = csv.writer(f, delimiter=',')
+            wr.writerow(header)
+            for row in dt:
+                wr.writerow(row)
+            result = True
+    
+    return result
+
+##########################
+### End Util Functions ###
+##########################

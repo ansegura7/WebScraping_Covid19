@@ -1121,3 +1121,18 @@ INFO:root:>> START PROGRAM: 2020-04-25 15:43:52.389588
 INFO:root: - The browser was created
 INFO:root: - No data to save
 INFO:root:>> END PROGRAM: 2020-04-25 15:43:54.062911
+INFO:root:>> START PROGRAM: 2020-05-05 08:53:58.683300
+INFO:root: - The browser was created
+INFO:root: - The document was read for: Comoros
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was not found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - The document was read for: Tajikistan
+INFO:root: - The data was found for: total_cases
+INFO:root: - The data was found for: total_deaths
+INFO:root: - The data was found for: active_cases
+INFO:root: - Start of bulk insert for 2 countries: 2020-05-05 08:54:28.170476
+INFO:root: - Data stored in the database for Comoros, n: 75
+INFO:root: - Data stored in the database for Tajikistan, n: 75
+INFO:root: - End of bulk insert: 2020-05-05 08:54:28.193476
+INFO:root:>> END PROGRAM: 2020-05-05 08:54:28.194477

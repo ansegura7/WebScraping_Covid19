@@ -6,9 +6,11 @@
     Source: https://www.worldometers.info/coronavirus/country/
 """
 
+# Import custom libraries
+import util_lib as ul
+
 # Import util libraries
 import logging
-import yaml
 import csv
 import pytz
 from pytz import timezone
@@ -63,13 +65,8 @@ def read_csv_to_dict(filename, key_name, val_name):
 
 # DB function - Get database credentials
 def get_db_credentials():
-    db_login = dict()
     yaml_path = 'config\database.yml'
-    
-    with open(yaml_path) as f:
-        yaml_file = f.read()
-        db_login = yaml.load(yaml_file, Loader=yaml.FullLoader)
-    
+    db_login = ul.get_dict_from_yaml(yaml_path)
     return db_login
 
 # DB function - Get countries with more daily data 
