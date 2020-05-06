@@ -2915,3 +2915,228 @@ INFO:root: - Data stored in the database: 17
 INFO:root: - Current data saved in CSV file
 INFO:root: - Historical data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-05-05 09:00:07.629654
+INFO:root:>> START PROGRAM: 2020-05-05 10:00:03.186914
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 9
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 10:00:06.978271
+INFO:root:>> START PROGRAM: 2020-05-05 11:00:03.002937
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 16
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 11:00:06.185342
+INFO:root:>> START PROGRAM: 2020-05-05 12:00:03.248976
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 12
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 12:00:06.688366
+INFO:root:>> START PROGRAM: 2020-05-05 13:00:02.981701
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 16
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 13:00:06.835317
+INFO:root:>> START PROGRAM: 2020-05-05 14:00:03.077157
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 19
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 14:00:05.843285
+INFO:root:>> START PROGRAM: 2020-05-05 15:00:02.815525
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 13
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 15:00:05.355859
+INFO:root:>> START PROGRAM: 2020-05-05 16:00:02.810356
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 7
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 16:00:05.529406
+INFO:root:>> START PROGRAM: 2020-05-05 17:00:02.741442
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 8
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 17:00:05.485752
+INFO:root:>> START PROGRAM: 2020-05-05 18:00:02.730158
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 20
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 18:00:05.338791
+INFO:root:>> START PROGRAM: 2020-05-05 19:00:02.863252
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 6
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 19:00:06.023437
+INFO:root:>> START PROGRAM: 2020-05-05 20:00:02.673842
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 12
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 20:00:05.522416
+INFO:root:>> START PROGRAM: 2020-05-05 21:00:02.811376
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 8
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 21:00:05.586550
+INFO:root:>> START PROGRAM: 2020-05-05 22:00:02.714034
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 8
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 22:00:06.045220
+INFO:root:>> START PROGRAM: 2020-05-05 23:00:02.714937
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 4
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-05 23:00:05.409482
+INFO:root:>> START PROGRAM: 2020-05-06 00:00:02.214385
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 8
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 00:00:05.158566
+INFO:root:>> START PROGRAM: 2020-05-06 01:00:02.885820
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 5
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 01:00:05.645376
+INFO:root:>> START PROGRAM: 2020-05-06 02:00:02.764639
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 10
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 02:00:05.515540
+INFO:root:>> START PROGRAM: 2020-05-06 03:00:02.803953
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 12
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 03:00:05.407326
+INFO:root:>> START PROGRAM: 2020-05-06 04:00:02.821027
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 13
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 04:00:05.817962
+INFO:root:>> START PROGRAM: 2020-05-06 05:00:02.748463
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 9
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 05:00:05.612640
+INFO:root:>> START PROGRAM: 2020-05-06 06:00:02.761370
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 16
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 06:00:05.514445
+INFO:root:>> START PROGRAM: 2020-05-06 07:00:02.746682
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 10
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 07:00:05.677284
+INFO:root:>> START PROGRAM: 2020-05-06 08:00:02.746341
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 24
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 08:00:06.539117
+INFO:root:>> START PROGRAM: 2020-05-06 09:00:03.721533
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 16
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 09:00:07.321882
+INFO:root:>> START PROGRAM: 2020-05-06 10:00:03.285860
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 212
+INFO:root: - Data stored in the database: 16
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-06 10:00:06.399296

@@ -39,6 +39,17 @@ def get_dict_from_yaml(yaml_path):
     
     return result
 
+# Util function - Read CSV file from full filepath
+def read_csv_file(filename, encoding='utf-8-sig', delimiter=','):
+    data = []
+    
+    with open(filename, 'r', encoding=encoding) as f:
+        csv_file = csv.reader(f, delimiter=delimiter)
+        for row in csv_file:
+            data.append(row)
+            
+    return data
+
 # Util function - Save data list to CSV file
 def save_data_to_csv(dt, filename, header):
     result = False

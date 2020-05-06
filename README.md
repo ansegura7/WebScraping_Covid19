@@ -61,21 +61,28 @@ If the main Web Scraping libraries do not come with the selected Anaconda distri
   conda install -c conda-forge selenium
 ```
 
-The specific Python 3.7 libraries used are:
+The specific Python 3.7.x libraries used are:
 
 ``` python
+  # Import custom libraries
+  import util_lib as ul
+
   # Import util libraries
   import logging
-  import yaml
-  import csv
   import pytz
   from pytz import timezone
   from datetime import datetime
-  
+
+  # Email libraries
+  import smtplib
+  import ssl
+  from email.mime.multipart import MIMEMultipart
+  from email.mime.text import MIMEText
+
   # Database libraries
   import pyodbc
 
-  # Import Web Scraping 1 libraries
+  # Import Web Scraping libraries
   from urllib.request import urlopen
   from urllib.request import Request
   from urllib.error import HTTPError

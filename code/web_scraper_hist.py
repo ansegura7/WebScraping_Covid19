@@ -11,7 +11,6 @@ import util_lib as ul
 
 # Import util libraries
 import logging
-import csv
 import pytz
 from pytz import timezone
 from datetime import datetime
@@ -38,16 +37,20 @@ def data_quality(data, top_date):
     
     return new_data
 
-# Util function - Read CSV file and save it in a dictionary
-def read_csv_to_dict(filename, key_name, val_name):
+# Util function - Read the country data from the CSV file and save it in a dictionary
+def get_country_data(key_name, val_name):
     country_list = dict()
+    
+    # CSV file variables
+    filename = '../data/country_info.csv'
     ix_key_name = -1
     ix_val_name = -1
     
-    with open(filename, 'r', encoding='utf-8-sig') as f:
-        rd = csv.reader(f, delimiter=',')
-        
-        for row in rd:
+    # Read country data csv file
+    csv_data = ul.read_csv_file(filename)
+    
+    if len(csv_data):
+        for row in csv_data:
             # Get variables index
             if ix_key_name == -1 and ix_val_name == -1:
                 if key_name in row:
@@ -156,7 +159,7 @@ def web_scraping_hist(db_login, batch_size, threshold):
                   data_cols[2]: 'graph-active-cases-total'}
     
     # Get country url dict
-    country_url = read_csv_to_dict('../data/country_info.csv', 'country', 'url')
+    country_url = get_country_data(key_name='country', val_name='url')
     
     # Get country count dict
     country_count = get_country_data_count(db_login)
@@ -248,7 +251,7 @@ db_login = get_db_credentials()
 
 # 2. Declaration of the execution variables
 batch_size = 25
-threshold = 15
+threshold = 10
 
 # 3. Get historical data
 data = web_scraping_hist(db_login, batch_size, threshold)

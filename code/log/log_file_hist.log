@@ -1136,3 +1136,7 @@ INFO:root: - Data stored in the database for Comoros, n: 75
 INFO:root: - Data stored in the database for Tajikistan, n: 75
 INFO:root: - End of bulk insert: 2020-05-05 08:54:28.193476
 INFO:root:>> END PROGRAM: 2020-05-05 08:54:28.194477
+INFO:root:>> START PROGRAM: 2020-05-06 10:33:31.498864
+INFO:root: - The browser was created
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-06 10:33:33.995796
