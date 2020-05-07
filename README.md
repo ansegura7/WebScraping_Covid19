@@ -19,7 +19,7 @@ Create a web scraper bot to obtain data on confirmed cases and deaths of Covid-1
 ## Process
 1. Run the Web Scraper with Selenium to obtain the historical data. It only runs 1 time.
 2. Run the Web Scraper with BeautifulSoup to obtain daily data (every day every x hours).
-3. Export the historical daily data in a CSV file, to feed the dashboard in PowerBI.
+3. Export the historical daily data in a CSV file, to feed the dashboard in Power BI.
 4. Use the Covid 19 dashboard (built in Power BI) to analyze data and find insights.
 
 ## Data
