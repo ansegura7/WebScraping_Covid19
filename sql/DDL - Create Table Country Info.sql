@@ -33,7 +33,7 @@ CREATE TABLE [dbo].[country_info](
 	[timezones] [nvarchar](50) NULL,
 	[borders] [nvarchar](100) NULL,
 	[native_name] [nvarchar](100) NULL,
-	[numericCode] [int] NULL,
+	[numeric_code] [int] NULL,
 	[currencies_code] [nvarchar](50) NULL,
 	[currencies_name] [nvarchar](50) NULL,
 	[currencies_symbol] [nvarchar](10) NULL,

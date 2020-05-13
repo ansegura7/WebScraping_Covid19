@@ -16,7 +16,7 @@ Bahamas,Bahamas,country/bahamas/,Nassau,Americas,Caribbean,13943,378040,https://
 Bahrain,Bahrain,country/bahrain/,Manama,Asia,Western Asia,765,1404900,
 Bangladesh,Bangladesh,country/bangladesh/,Dhaka,Asia,Southern Asia,147570,161006790,
 Barbados,Barbados,country/barbados/,Bridgetown,Americas,Caribbean,430,285000,https://restcountries.eu/data/brb.svg
-Belarus,Belarus,country/belarus/,Minsk,Europe,Eastern Europe,207600,9498700,
+Belarus,Belarus,country/belarus/,Minsk,Europe,Eastern Europe,207600,9498700,https://restcountries.eu/data/blr.svg
 Belgium,Belgium,country/belgium/,Brussels,Europe,Western Europe,30528,11515790,
 Belize,Belize,country/belize/,Belmopan,Americas,Central America,22966,370300,https://restcountries.eu/data/blz.svg
 Benin,Benin,country/benin/,Porto-Novo,Africa,Western Africa,112622,10653654,
@@ -42,7 +42,7 @@ Chad,Chad,country/chad/,N'Djamena,Africa,Middle Africa,1284000,14497000,
 Channel Islands,Channel Islands,country/channel-islands/,,Europe,Northern Europe,197000,170000,
 Chile,Chile,country/chile/,Santiago,Americas,South America,756102,18191900,https://restcountries.eu/data/chl.svg
 China,China,country/china/,Beijing,Asia,Eastern Asia,9640011,1427647786,
-Colombia,Colombia,country/colombia/,Bogotá,Americas,South America,1141748,48759958,https://restcountries.eu/data/col.svg
+Colombia,Colombia,country/colombia/,Bogotá,Americas,South America,1141748,50372424,https://restcountries.eu/data/col.svg
 Comoros,Comoros,country/comoros/,Moroni,Africa,Eastern Africa,1862,806153,
 Congo,Congo,country/congo/,Brazzaville,Africa,Middle Africa,342000,4741000,
 Costa Rica,Costa Rica,country/costa-rica/,San José,Americas,Central America,51100,4890379,https://restcountries.eu/data/cri.svg
@@ -50,8 +50,8 @@ Croatia,Croatia,country/croatia/,Zagreb,Europe,Southern Europe,56594,4190669,
 Cuba,Cuba,country/cuba/,Havana,Americas,Caribbean,109884,11239004,https://restcountries.eu/data/cub.svg
 Curaçao,Curaçao,country/curacao/,Willemstad,Americas,Caribbean,444,154843,https://restcountries.eu/data/cuw.svg
 Cyprus,Cyprus,country/cyprus/,Nicosia,Europe,Southern Europe,9251,847000,
-Czechia,Czech Republic,country/czech-republic/,Prague,Europe,Eastern Europe,78865,10558524,
-Denmark,Denmark,country/denmark/,Copenhagen,Europe,Northern Europe,43094,5717014,
+Czechia,Czech Republic,country/czech-republic/,Prague,Europe,Eastern Europe,78865,10558524,https://restcountries.eu/data/cze.svg
+Denmark,Denmark,country/denmark/,Copenhagen,Europe,Northern Europe,43094,5717014,https://restcountries.eu/data/dnk.svg
 Djibouti,Djibouti,country/djibouti/,Djibouti,Africa,Eastern Africa,23200,900000,
 Dominica,Dominica,country/dominica/,Roseau,Americas,Caribbean,751,71293,https://restcountries.eu/data/dma.svg
 Dominican Republic,Dominican Republic,country/dominican-republic/,Santo Domingo,Americas,Caribbean,48671,10075045,https://restcountries.eu/data/dom.svg
@@ -90,8 +90,8 @@ Honduras,Honduras,country/honduras/,Tegucigalpa,Americas,Central America,112492,
 Hong Kong,Hong Kong,country/china-hong-kong-sar/,City of Victoria,Asia,Eastern Asia,1104,7324300,
 Hungary,Hungary,country/hungary/,Budapest,Europe,Eastern Europe,93028,9823000,
 Iceland,Iceland,country/iceland/,Reykjavík,Europe,Northern Europe,103000,334300,
-India,India,country/india/,New Delhi,Asia,Southern Asia,3287590,1295210000,
-Indonesia,Indonesia,country/indonesia/,Jakarta,Asia,South-Eastern Asia,1904569,258705000,
+India,India,country/india/,New Delhi,Asia,Southern Asia,3287590,1372065957,https://restcountries.eu/data/ind.svg
+Indonesia,Indonesia,country/indonesia/,Jakarta,Asia,South-Eastern Asia,1904569,258705000,https://restcountries.eu/data/idn.svg
 Iran,Iran (Islamic Republic of),country/iran/,Tehran,Asia,Southern Asia,1648195,83183741,
 Iraq,Iraq,country/iraq/,Baghdad,Asia,Western Asia,438317,37883543,
 Ireland,Ireland,country/ireland/,Dublin,Europe,Northern Europe,70273,6378000,
@@ -100,7 +100,7 @@ Israel,Israel,country/israel/,Jerusalem,Asia,Western Asia,20770,8527400,
 Italy,Italy,country/italy/,Rome,Europe,Southern Europe,301336,60317116,
 Ivory Coast,Côte d'Ivoire,country/cote-d-ivoire/,Yamoussoukro,Africa,Western Africa,322463,22671331,
 Jamaica,Jamaica,country/jamaica/,Kingston,Americas,Caribbean,10991,2723246,https://restcountries.eu/data/jam.svg
-Japan,Japan,country/japan/,Tokyo,Asia,Eastern Asia,377930,126960000,
+Japan,Japan,country/japan/,Tokyo,Asia,Eastern Asia,377930,126960000,https://restcountries.eu/data/jpn.svg
 Jordan,Jordan,country/jordan/,Amman,Asia,Western Asia,89342,9531712,
 Kazakhstan,Kazakhstan,country/kazakhstan/,Astana,Asia,Central Asia,2724900,17753200,
 Kenya,Kenya,country/kenya/,Nairobi,Africa,Eastern Africa,580367,47251000,
@@ -109,6 +109,7 @@ Kyrgyzstan,Kyrgyzstan,country/kyrgyzstan/,Bishkek,Asia,Central Asia,199951,60478
 Laos,Lao People's Democratic Republic,country/laos/,Vientiane,Asia,South-Eastern Asia,236800,6492400,
 Latvia,Latvia,country/latvia/,Riga,Europe,Northern Europe,64559,1961600,
 Lebanon,Lebanon,country/lebanon/,Beirut,Asia,Western Asia,10452,5988000,
+Lesotho,Lesotho,country/lesotho/,Maseru,Africa,Southern Africa,30355,1894194,https://restcountries.eu/data/lso.svg
 Liberia,Liberia,country/liberia/,Monrovia,Africa,Western Africa,111369,4615000,
 Libya,Libya,country/libya/,Tripoli,Africa,Northern Africa,1759540,6385000,
 Liechtenstein,Liechtenstein,country/liechtenstein/,Vaduz,Europe,Western Europe,160,37623,
@@ -143,7 +144,7 @@ Nicaragua,Nicaragua,country/nicaragua/,Managua,Americas,Central America,130373,6
 Niger,Niger,country/niger/,Niamey,Africa,Western Africa,1267000,20715000,
 Nigeria,Nigeria,country/nigeria/,Abuja,Africa,Western Africa,923768,186988000,
 North Macedonia,Macedonia (the former Yugoslav Republic of),country/macedonia/,Skopje,Europe,Southern Europe,25713,2058539,
-Norway,Norway,country/norway/,Oslo,Europe,Northern Europe,323802,5223256,
+Norway,Norway,country/norway/,Oslo,Europe,Northern Europe,323802,5223256,https://restcountries.eu/data/nor.svg
 Oman,Oman,country/oman/,Muscat,Asia,Western Asia,309500,4420133,
 Pakistan,Pakistan,country/pakistan/,Islamabad,Asia,Southern Asia,881912,194125062,
 Palestine,Palestine (State of),country/state-of-palestine/,Ramallah,Asia,Western Asia,6220,4682467,
@@ -154,12 +155,12 @@ Peru,Peru,country/peru/,Lima,Americas,South America,1285216,31488700,https://res
 Philippines,Philippines,country/philippines/,Manila,Asia,South-Eastern Asia,342353,103279800,
 Poland,Poland,country/poland/,Warsaw,Europe,Eastern Europe,312679,38437239,
 Portugal,Portugal,country/portugal/,Lisbon,Europe,Southern Europe,92090,10374822,
-Qatar,Qatar,country/qatar/,Doha,Asia,Western Asia,11586,2587564,
+Qatar,Qatar,country/qatar/,Doha,Asia,Western Asia,11586,2587564,https://restcountries.eu/data/qat.svg
 Réunion,Réunion,country/reunion/,Saint-Denis,Africa,Eastern Africa,2512,840974,
-Romania,Romania,country/romania/,Bucharest,Europe,Eastern Europe,238391,19861408,
+Romania,Romania,country/romania/,Bucharest,Europe,Eastern Europe,238391,19861408,https://restcountries.eu/data/rou.svg
 Russia,Russian Federation,country/russia/,Moscow,Europe,Eastern Europe,17124442,146599183,
 Rwanda,Rwanda,country/rwanda/,Kigali,Africa,Eastern Africa,26338,11553188,
-S. Korea,Korea (Republic of),country/south-korea/,Seoul,Asia,Eastern Asia,100210,50801405,
+S. Korea,Korea (Republic of),country/south-korea/,Seoul,Asia,Eastern Asia,100210,51709098,
 Saint Kitts and Nevis,Saint Kitts and Nevis,country/saint-kitts-and-nevis/,Basseterre,Americas,Caribbean,261,46204,https://restcountries.eu/data/kna.svg
 Saint Lucia,Saint Lucia,country/saint-lucia/,Castries,Americas,Caribbean,616,186000,https://restcountries.eu/data/lca.svg
 Saint Martin,Saint Martin (French part),country/saint-martin/,Marigot,Americas,Caribbean,53,36979,https://restcountries.eu/data/maf.svg
@@ -168,15 +169,15 @@ San Marino,San Marino,country/san-marino/,City of San Marino,Europe,Southern Eur
 Sao Tome and Principe,Sao Tome and Principe,country/sao-tome-and-principe/,São Tomé,Africa,Middle Africa,964,187356,
 Saudi Arabia,Saudi Arabia,country/saudi-arabia/,Riyadh,Asia,Western Asia,2149690,32248200,
 Senegal,Senegal,country/senegal/,Dakar,Africa,Western Africa,196722,14799859,
-Serbia,Serbia,country/serbia/,Belgrade,Europe,Southern Europe,88361,7076372,
+Serbia,Serbia,country/serbia/,Belgrade,Europe,Southern Europe,88361,7076372,https://restcountries.eu/data/srb.svg
 Seychelles,Seychelles,country/seychelles/,Victoria,Africa,Eastern Africa,452,91400,
 Sierra Leone,Sierra Leone,country/sierra-leone/,Freetown,Africa,Western Africa,71740,7075641,
-Singapore,Singapore,country/singapore/,Singapore,Asia,South-Eastern Asia,710,5535000,
+Singapore,Singapore,country/singapore/,Singapore,Asia,South-Eastern Asia,710,5535000,https://restcountries.eu/data/sgp.svg
 Sint Maarten,Sint Maarten (Dutch part),country/sint-maarten/,Philipsburg,Americas,Caribbean,34,38247,https://restcountries.eu/data/sxm.svg
 Slovakia,Slovakia,country/slovakia/,Bratislava,Europe,Eastern Europe,49037,5426252,
 Slovenia,Slovenia,country/slovenia/,Ljubljana,Europe,Southern Europe,20273,2064188,
 Somalia,Somalia,country/somalia/,Mogadishu,Africa,Eastern Africa,637657,11079000,
-South Africa,South Africa,country/south-africa/,Pretoria,Africa,Southern Africa,1221037,55653654,
+South Africa,South Africa,country/south-africa/,Pretoria,Africa,Southern Africa,1221037,58775022,https://restcountries.eu/data/zaf.svg
 South Sudan,South Sudan,country/south-sudan/,Juba,Africa,Middle Africa,619745,12131000,
 Spain,Spain,country/spain/,Madrid,Europe,Southern Europe,505992,47007367,
 Sri Lanka,Sri Lanka,country/sri-lanka/,Colombo,Asia,Southern Asia,65610,20966000,
@@ -200,7 +201,7 @@ Turks and Caicos,Turks and Caicos Islands,country/turks-and-caicos-islands/,Cock
 UAE,United Arab Emirates,country/united-arab-emirates/,Abu Dhabi,Asia,Western Asia,83600,9856000,
 Uganda,Uganda,country/uganda/,Kampala,Africa,Eastern Africa,241550,33860700,
 UK,United Kingdom of Great Britain and Northern Ireland,country/uk/,London,Europe,Northern Europe,242900,67886004,
-Ukraine,Ukraine,country/ukraine/,Kiev,Europe,Eastern Europe,603700,42692393,
+Ukraine,Ukraine,country/ukraine/,Kiev,Europe,Eastern Europe,603700,42692393,https://restcountries.eu/data/ukr.svg
 Uruguay,Uruguay,country/uruguay/,Montevideo,Americas,South America,181034,3480222,https://restcountries.eu/data/ury.svg
 USA,United States of America,country/us/,Washington D.C.,Americas,Northern America,9629091,328239523,https://restcountries.eu/data/usa.svg
 Uzbekistan,Uzbekistan,country/uzbekistan/,Tashkent,Asia,Central Asia,447400,31576400,
