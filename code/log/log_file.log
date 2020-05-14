@@ -4871,3 +4871,12 @@ INFO:root: - Data stored in the database: 9
 INFO:root: - Current data saved in CSV file
 INFO:root: - Historical data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-05-14 10:00:06.750746
+INFO:root:>> START PROGRAM: 2020-05-14 11:00:03.351775
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 15
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-14 11:00:06.448994
