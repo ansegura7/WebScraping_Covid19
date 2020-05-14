@@ -3,9 +3,9 @@ GO
 DECLARE @cols NVARCHAR(MAX)
 
 WITH cte_data AS (
-	SELECT [index], [country], [region], [flag], [total_cases] AS [value]
+	SELECT [index], [country], [region], [flag], [value]
 	  FROM 
-		   (SELECT [country], [date], [total_cases],
+		   (SELECT [country], [date], [total_cases] AS [value],
 			       --[total_deaths], SUM([total_cases]) OVER (PARTITION BY [country] ORDER BY [date]) AS [sum_cases], 
 				   ROW_NUMBER() OVER (PARTITION BY [country] ORDER BY [date]) AS [index]
 		      FROM [dbo].[v_daily_covid19_data]
