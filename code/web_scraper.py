@@ -281,6 +281,46 @@ def send_notification_email(country_list):
 
 curr_table = None
 
+# Find the index of the variables in the table header
+def get_variables_index(header):
+    vars_ix = {
+        'country': 1, 
+        'total_cases': 2, 
+        'total_deaths': 4,
+        'total_recovered': 6,
+        'active_cases': 7,
+        'serious_critical': 8,
+        'tot_cases_1m_pop': 9,
+        'deaths_1m_pop': 10,
+        'total_tests': 11,
+        'tests_1m_pop': 12
+    }
+    vars_name = {
+        'country': 'country,other', 
+        'total_cases': 'totalcases', 
+        'total_deaths': 'totaldeaths',
+        'total_recovered': 'totalrecovered',
+        'active_cases': 'activecases',
+        'serious_critical': 'serious,critical',
+        'tot_cases_1m_pop': 'totcases/1m pop',
+        'deaths_1m_pop': 'deaths/1m pop',
+        'total_tests': 'totaltests',
+        'tests_1m_pop': 'tests/1m pop'
+    }
+    
+    cols = header.findAll('th')
+    if len(cols):
+        vars_list = [col.text.strip().lower().replace(u'\xa0', u'').replace(u'\n', u'') for col in cols]
+        
+        for k, v in vars_name.items():
+            if v in vars_list:
+                ix = vars_list.index(v)
+                vars_ix[k] = ix
+            else:
+                logging.info(' - Warning: variable %s was not found in the header' % k)
+    
+    return vars_ix
+
 # Web Scraping function
 def web_scraping_data(db_login):
     record_list = []
@@ -310,7 +350,7 @@ def web_scraping_data(db_login):
     except URLError:
         logging.error(' - Server down or incorrect domain')
         
-    else:        
+    else:
         # Find today main table
         curr_table = soup.find('table', {'id': id_main_table})
         
@@ -320,24 +360,23 @@ def web_scraping_data(db_login):
             rows = curr_table.findAll('tr')
             
             if len(rows):
+                vars_ix = get_variables_index(rows[0])
+                
                 for row in rows:
                     cols = row.findAll('td')
                     
-                    if len(cols) >= 13 and 'country' in str(cols[1].a):                            
-                        curr_country = cols[1].a.text.strip()
-                        record = {
-                            'country': curr_country,
-                            'total_cases': ul.parse_num(cols[2].text),
-                            'total_deaths': ul.parse_num(cols[4].text),
-                            'total_recovered': ul.parse_num(cols[6].text),
-                            'active_cases': ul.parse_num(cols[7].text),
-                            'serious_critical': ul.parse_num(cols[8].text),
-                            'tot_cases_1m_pop': ul.parse_num(cols[9].text),
-                            'deaths_1m_pop': ul.parse_num(cols[10].text),
-                            'total_tests': ul.parse_num(cols[11].text),
-                            'tests_1m_pop': ul.parse_num(cols[12].text),
-                            'datestamp': local_tz.localize(datetime.now()).isoformat()
-                        }
+                    # Validation to make sure it is a row with country data
+                    if len(cols) >= 13 and 'country' in str(cols[vars_ix['country']].a):                            
+                        curr_country = cols[vars_ix['country']].a.text.strip()
+                        
+                        # Create country data
+                        record = { 'country': curr_country }
+                        for name, ix in vars_ix.items():
+                            if name != 'country':
+                                record[name] = ul.parse_num(cols[ix].text)
+                        record['datestamp'] = local_tz.localize(datetime.now()).isoformat()
+                        
+                        # Save country data
                         record_list.append(list(record.values()))
                         
                         # If it's a new country...
