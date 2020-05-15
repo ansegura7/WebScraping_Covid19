@@ -279,6 +279,8 @@ def send_notification_email(country_list):
     
     return result
 
+curr_table = None
+
 # Web Scraping function
 def web_scraping_data(db_login):
     record_list = []
@@ -321,19 +323,19 @@ def web_scraping_data(db_login):
                 for row in rows:
                     cols = row.findAll('td')
                     
-                    if len(cols) == 13 and 'country' in str(cols[0].a):                            
-                        curr_country = cols[0].a.text.strip()
+                    if len(cols) >= 13 and 'country' in str(cols[1].a):                            
+                        curr_country = cols[1].a.text.strip()
                         record = {
                             'country': curr_country,
-                            'total_cases': ul.parse_num(cols[1].text),
-                            'total_deaths': ul.parse_num(cols[3].text),
-                            'total_recovered': ul.parse_num(cols[5].text),
-                            'active_cases': ul.parse_num(cols[6].text),
-                            'serious_critical': ul.parse_num(cols[7].text),
-                            'tot_cases_1m_pop': ul.parse_num(cols[8].text),
-                            'deaths_1m_pop': ul.parse_num(cols[9].text),
-                            'total_tests': ul.parse_num(cols[10].text),
-                            'tests_1m_pop': ul.parse_num(cols[11].text),
+                            'total_cases': ul.parse_num(cols[2].text),
+                            'total_deaths': ul.parse_num(cols[4].text),
+                            'total_recovered': ul.parse_num(cols[6].text),
+                            'active_cases': ul.parse_num(cols[7].text),
+                            'serious_critical': ul.parse_num(cols[8].text),
+                            'tot_cases_1m_pop': ul.parse_num(cols[9].text),
+                            'deaths_1m_pop': ul.parse_num(cols[10].text),
+                            'total_tests': ul.parse_num(cols[11].text),
+                            'tests_1m_pop': ul.parse_num(cols[12].text),
                             'datestamp': local_tz.localize(datetime.now()).isoformat()
                         }
                         record_list.append(list(record.values()))
