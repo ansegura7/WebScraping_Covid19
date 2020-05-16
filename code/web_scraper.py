@@ -236,7 +236,7 @@ def generate_historical_data(db_login):
                        [tests_1m_pop], [date], [perc_deaths], [perc_infection], ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_index],
                 	   [region], [subregion], [diff_total_cases], [diff_total_deaths], [diff_active_cases]
                   FROM [c19_data]
-                 ORDER BY [date] ASC;
+                 ORDER BY [date], [country];
                 '''
         
         dt = cursor.execute(query).fetchall()
@@ -310,7 +310,7 @@ def get_variables_index(header):
     
     cols = header.findAll('th')
     if len(cols):
-        vars_list = [col.text.strip().lower().replace(u'\xa0', u'').replace(u'\n', u'') for col in cols]
+        vars_list = [ul.dq_clean_html_text(col.text).lower() for col in cols]
         
         for k, v in vars_name.items():
             if v in vars_list:
@@ -373,7 +373,7 @@ def web_scraping_data(db_login):
                         record = { 'country': curr_country }
                         for name, ix in vars_ix.items():
                             if name != 'country':
-                                record[name] = ul.parse_num(cols[ix].text)
+                                record[name] = ul.dq_parse_num(cols[ix].text)
                         record['datestamp'] = local_tz.localize(datetime.now()).isoformat()
                         
                         # Save country data

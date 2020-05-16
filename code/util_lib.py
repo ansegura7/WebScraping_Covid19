@@ -2,6 +2,7 @@
 """
     Created By: Andres Segura Tinoco
     Created On: May 05, 2020
+    Version: 0.1.0
     Description: Library with utility functions
 """
 
@@ -13,8 +14,8 @@ import csv
 ### Start Util Functions ###
 ############################
 
-# Util function - Converts a string to a number (int or float) 
-def parse_num(n):
+# Data quality function - Converts a string to a number (int or float) 
+def dq_parse_num(n):
     v = 0
     
     if n == 'N/A':
@@ -28,6 +29,11 @@ def parse_num(n):
             v = int(n)
     
     return v
+
+# Data quality function - Clean html text and convert it to plain text
+def dq_clean_html_text(html_text):
+    plain_text = html_text.strip().replace(u'\n', u'')
+    return plain_text.encode('ascii', 'ignore').decode("utf-8")
 
 # Util function - Read dict from yaml file
 def get_dict_from_yaml(yaml_path):
