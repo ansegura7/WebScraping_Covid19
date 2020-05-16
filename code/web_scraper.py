@@ -224,17 +224,18 @@ def generate_historical_data(db_login):
                            ISNULL([tests_1m_pop], 0) AS [tests_1m_pop], CONVERT(varchar, [date], 101) AS [date], 
                            CAST((CASE WHEN total_cases > 0 THEN 100.0 * total_deaths / total_cases ELSE 0 END) AS numeric(5, 2)) AS [perc_deaths],
                            CAST((CASE WHEN total_tests > 0 THEN 100.0 * total_cases / total_tests ELSE 0 END) AS numeric(5, 2)) AS [perc_infection],
-                		   ISNULL([diff_total_cases], 0) AS [diff_total_cases],
+                		   CAST((CASE WHEN total_cases > 0 THEN 100.0 * ISNULL(total_recovered, 0) / total_cases ELSE 0 END) AS numeric(5, 2)) AS [perc_recovered],
+                           ISNULL([diff_total_cases], 0) AS [diff_total_cases],
                            ISNULL([diff_total_deaths], 0) AS [diff_total_deaths],
-                		   ISNULL([diff_total_recovered], 0) AS [diff_total_recovered]
+                           ISNULL([diff_total_recovered], 0) AS [diff_total_recovered]
                 	  FROM [dbo].[v_daily_covid19_data] AS cd
                 	 INNER JOIN
                 		   [dbo].[country_info] AS ci
-                		ON cd.[country] = ci.[name]
+                	    ON cd.[country] = ci.[name]
                 )
-                SELECT [country], [total_cases], [total_deaths], [total_recovered], [active_cases], [serious_critical], [tot_cases_1m_pop], [deaths_1m_pop], [total_tests],  
-                       [tests_1m_pop], [date], [perc_deaths], [perc_infection], ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_index],
-                	   [region], [subregion], [diff_total_cases], [diff_total_deaths], [diff_total_recovered]
+                SELECT [country], [region], [subregion], [date], ROW_NUMBER() OVER(PARTITION BY [date] ORDER BY [total_deaths] DESC) AS [row_index],
+                	   [total_cases], [total_deaths], [total_recovered], [active_cases], [serious_critical], [total_tests], [tot_cases_1m_pop], [deaths_1m_pop],
+                	   [tests_1m_pop], [perc_deaths], [perc_infection], [perc_recovered], [diff_total_cases], [diff_total_deaths], [diff_total_recovered]
                   FROM [c19_data]
                  ORDER BY [date], [country];
                 '''
