@@ -13077,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Similarity-of-the-Curve-Slope">Similarity of the Curve Slope<a class="anchor-link" href="#Similarity-of-the-Curve-Slope">&#182;</a></h1><ul>
+<h1 id="Similarity-of-the-Curve-Slopes">Similarity of the Curve Slopes<a class="anchor-link" href="#Similarity-of-the-Curve-Slopes">&#182;</a></h1><ul>
 <li><strong>Created by: Andrés Segura Tinoco</strong></li>
 <li><strong>Created on: May 19, 2020</strong></li>
 <li><strong>Data: Covid 19</strong></li>
@@ -13116,7 +13116,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Reading historical data</span>
 <span class="n">dataURL</span> <span class="o">=</span> <span class="s2">&quot;../data/historical_data.csv&quot;</span>
-<span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">,</span> <span class="s2">&quot;region&quot;</span><span class="p">,</span> <span class="s2">&quot;subregion&quot;</span><span class="p">,</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;total_cases&quot;</span><span class="p">,</span> <span class="s2">&quot;total_deaths&quot;</span><span class="p">,</span> <span class="s2">&quot;active_cases&quot;</span><span class="p">,</span> <span class="s2">&quot;total_tests&quot;</span><span class="p">]</span>
+<span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">,</span> <span class="s2">&quot;region&quot;</span><span class="p">,</span> <span class="s2">&quot;subregion&quot;</span><span class="p">,</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;total_cases&quot;</span><span class="p">,</span> <span class="s2">&quot;total_deaths&quot;</span><span class="p">,</span> <span class="s2">&quot;diff_total_cases&quot;</span><span class="p">,</span> <span class="s2">&quot;diff_total_deaths&quot;</span><span class="p">]</span>
 <span class="n">raw_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataURL</span><span class="p">,</span> <span class="n">usecols</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">column</span> <span class="p">:</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">column_list</span><span class="p">)</span>
 <span class="n">raw_data</span>
 </pre></div>
@@ -13160,8 +13160,8 @@ div#notebook {
       <th>date</th>
       <th>total_cases</th>
       <th>total_deaths</th>
-      <th>active_cases</th>
-      <th>total_tests</th>
+      <th>diff_total_cases</th>
+      <th>diff_total_deaths</th>
     </tr>
   </thead>
   <tbody>
@@ -13173,7 +13173,7 @@ div#notebook {
       <td>01/22/2020</td>
       <td>571</td>
       <td>17</td>
-      <td>554</td>
+      <td>0</td>
       <td>0</td>
     </tr>
     <tr>
@@ -13184,7 +13184,7 @@ div#notebook {
       <td>01/22/2020</td>
       <td>2</td>
       <td>0</td>
-      <td>2</td>
+      <td>0</td>
       <td>0</td>
     </tr>
     <tr>
@@ -13195,8 +13195,8 @@ div#notebook {
       <td>01/23/2020</td>
       <td>830</td>
       <td>25</td>
-      <td>771</td>
-      <td>0</td>
+      <td>259</td>
+      <td>8</td>
     </tr>
     <tr>
       <th>3</th>
@@ -13206,7 +13206,7 @@ div#notebook {
       <td>01/23/2020</td>
       <td>2</td>
       <td>0</td>
-      <td>2</td>
+      <td>0</td>
       <td>0</td>
     </tr>
     <tr>
@@ -13217,8 +13217,8 @@ div#notebook {
       <td>01/24/2020</td>
       <td>1287</td>
       <td>41</td>
-      <td>1208</td>
-      <td>0</td>
+      <td>457</td>
+      <td>16</td>
     </tr>
     <tr>
       <th>...</th>
@@ -13239,8 +13239,8 @@ div#notebook {
       <td>05/20/2020</td>
       <td>324</td>
       <td>0</td>
-      <td>61</td>
-      <td>275000</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>20424</th>
@@ -13259,10 +13259,10 @@ div#notebook {
       <td>Asia</td>
       <td>Western Asia</td>
       <td>05/20/2020</td>
-      <td>167</td>
-      <td>28</td>
-      <td>134</td>
-      <td>120</td>
+      <td>184</td>
+      <td>30</td>
+      <td>17</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>20426</th>
@@ -13272,8 +13272,8 @@ div#notebook {
       <td>05/20/2020</td>
       <td>832</td>
       <td>7</td>
-      <td>628</td>
-      <td>19014</td>
+      <td>60</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>20427</th>
@@ -13283,8 +13283,8 @@ div#notebook {
       <td>05/20/2020</td>
       <td>46</td>
       <td>4</td>
-      <td>24</td>
-      <td>28019</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -13324,14 +13324,14 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>country                 object
-region                  object
-subregion               object
-date            datetime64[ns]
-total_cases              int64
-total_deaths             int64
-active_cases             int64
-total_tests              int64
+<pre>country                      object
+region                       object
+subregion                    object
+date                 datetime64[ns]
+total_cases                   int64
+total_deaths                  int64
+diff_total_cases              int64
+diff_total_deaths             int64
 dtype: object</pre>
 </div>
 
@@ -13424,7 +13424,7 @@ dtype: object</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime(2020, 5, 13, 12, 35, 17, 795441)</pre>
+<pre>datetime.datetime(2020, 5, 13, 15, 16, 30, 712040)</pre>
 </div>
 
 </div>
@@ -13529,12 +13529,12 @@ dtype: object</pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>country, curve_slope
-USA, 20441.214285714286
-Brazil, 12171.82142857143
+USA, 21052.035714285714
+Brazil, 12203.42857142857
 Russia, 9364.67857142857
-India, 5023.107142857143
+India, 5068.75
 Peru, 3321.6071428571427
-UK, 2766.4285714285716
+UK, 2710.1785714285716
 Chile, 2658.4285714285716
 Saudi Arabia, 2632.6071428571427
 Mexico, 2084.6428571428573
@@ -13587,16 +13587,16 @@ Iran, 2045.857142857143
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>country, curve_slope
-USA, 1169.9285714285713
-Brazil, 699.9642857142857
-UK, 292.75
+USA, 1220.1785714285713
+Brazil, 700.9285714285714
+UK, 331.64285714285717
 Mexico, 201.85714285714286
-Italy, 134.46428571428572
-India, 132.92857142857142
-France, 121.10714285714286
+Italy, 151.71428571428572
+India, 133.78571428571428
+France, 132.89285714285714
 Peru, 116.10714285714286
 Russia, 108.0
-Canada, 82.67857142857143
+Canada, 90.28571428571429
 </pre>
 </div>
 </div>
@@ -13687,10 +13687,10 @@ Belarus,Europe,943.18,4.75
 Belgium,Europe,283.89,39.79
 Bolivia,Americas,223.00,7.14
 Bosnia and Herzegovina,Europe,20.25,2.07
-Brazil,Americas,12171.82,699.96
+Brazil,Americas,12203.43,700.93
 Bulgaria,Europe,31.36,2.71
 Cameroon,Africa,107.04,0.11
-Canada,Americas,1054.00,82.68
+Canada,Americas,1115.93,90.29
 Chile,Americas,2658.43,29.11
 China,Asia,5.61,0.21
 Colombia,Americas,598.89,15.29
@@ -13703,31 +13703,31 @@ Ecuador,Americas,611.93,75.14
 Egypt,Africa,562.75,17.64
 Estonia,Europe,6.14,0.32
 Finland,Europe,47.50,2.50
-France,Europe,320.89,121.11
-Germany,Europe,531.54,47.68
+France,Europe,402.96,132.89
+Germany,Europe,560.79,52.61
 Greece,Europe,11.32,1.54
 Honduras,Americas,118.68,3.79
 Hungary,Europe,35.50,5.93
-India,Asia,5023.11,132.93
+India,Asia,5068.75,133.79
 Indonesia,Asia,519.07,35.32
 Iran,Asia,2045.86,55.04
 Iraq,Asia,102.61,3.25
-Ireland,Europe,71.93,9.46
+Ireland,Europe,78.79,10.54
 Israel,Asia,15.68,2.64
-Italy,Europe,627.25,134.46
+Italy,Europe,698.50,151.71
 Japan,Asia,40.61,12.39
 Kenya,Africa,44.96,1.21
 Kuwait,Asia,945.57,6.04
 Lithuania,Europe,10.32,1.21
-Luxembourg,Europe,7.71,1.11
+Luxembourg,Europe,9.11,1.11
 Malaysia,Asia,31.61,0.36
 Mexico,Americas,2084.64,201.86
 Moldova,Europe,156.93,5.36
-Morocco,Africa,81.29,0.64
+Morocco,Africa,90.39,0.64
 Netherlands,Europe,153.75,22.93
 Nigeria,Africa,220.46,4.71
 North Macedonia,Europe,23.50,2.46
-Norway,Europe,11.75,0.32
+Norway,Europe,13.25,0.32
 Pakistan,Asia,1726.54,36.18
 Panama,Americas,132.93,3.68
 Peru,Americas,3321.61,116.11
@@ -13741,16 +13741,16 @@ Saudi Arabia,Asia,2632.61,9.29
 Serbia,Europe,77.50,1.93
 Slovenia,Europe,0.61,0.32
 Somalia,Africa,50.04,1.36
-South Africa,Africa,814.75,13.46
-Spain,Europe,1036.64,76.96
+South Africa,Africa,900.79,16.36
+Spain,Europe,1113.89,88.75
 Sudan,Africa,162.86,3.96
 Sweden,Europe,453.82,40.14
 Switzerland,Europe,29.21,3.32
 Turkey,Asia,1298.43,36.00
-UAE,Asia,713.00,3.61
-UK,Europe,2766.43,292.75
+UAE,Asia,813.82,4.25
+UK,Europe,2710.18,331.64
 Ukraine,Europe,392.82,18.07
-USA,Americas,20441.21,1169.93
+USA,Americas,21052.04,1220.18
 </pre>
 </div>
 </div>

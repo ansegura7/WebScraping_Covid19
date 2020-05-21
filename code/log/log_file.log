@@ -6173,3 +6173,201 @@ INFO:root: - Data stored in the database: 14
 INFO:root: - Current data saved in CSV file
 INFO:root: - Historical data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-05-20 12:00:07.541351
+INFO:root:>> START PROGRAM: 2020-05-20 13:00:03.656330
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 18
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 13:00:07.714184
+INFO:root:>> START PROGRAM: 2020-05-20 14:00:03.526813
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 14
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 14:00:06.652873
+INFO:root:>> START PROGRAM: 2020-05-20 15:00:03.216330
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 10
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 15:00:06.403516
+INFO:root:>> START PROGRAM: 2020-05-20 16:00:04.114886
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 9
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 16:00:08.589982
+INFO:root:>> START PROGRAM: 2020-05-20 17:00:03.846985
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 11
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 17:00:07.565014
+INFO:root:>> START PROGRAM: 2020-05-20 18:00:03.408359
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 20
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 18:00:06.400162
+INFO:root:>> START PROGRAM: 2020-05-20 19:00:03.189157
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 59
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 19:00:06.048543
+INFO:root:>> START PROGRAM: 2020-05-20 20:00:03.217649
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 8
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 20:00:06.155149
+INFO:root:>> START PROGRAM: 2020-05-20 21:00:03.190812
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 10
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 21:00:05.987681
+INFO:root:>> START PROGRAM: 2020-05-20 22:00:03.336314
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 2
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-20 22:00:06.523824
+INFO:root:>> START PROGRAM: 2020-05-20 23:00:03.218481
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 10
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-20 23:00:05.424866
+INFO:root:>> START PROGRAM: 2020-05-21 00:00:02.690753
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 7
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 00:00:04.837496
+INFO:root:>> START PROGRAM: 2020-05-21 01:00:03.213586
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 3
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 01:00:05.385461
+INFO:root:>> START PROGRAM: 2020-05-21 02:00:03.265204
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 6
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 02:00:05.733949
+INFO:root:>> START PROGRAM: 2020-05-21 03:00:03.166204
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 12
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 03:00:05.275580
+INFO:root:>> START PROGRAM: 2020-05-21 04:00:02.243252
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 8
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 04:00:04.415821
+INFO:root:>> START PROGRAM: 2020-05-21 05:00:03.176825
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 9
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 05:00:05.301840
+INFO:root:>> START PROGRAM: 2020-05-21 06:00:03.258977
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 13
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 06:00:05.524607
+INFO:root:>> START PROGRAM: 2020-05-21 07:00:03.243730
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 18
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 07:00:05.431223
+INFO:root:>> START PROGRAM: 2020-05-21 08:00:03.441622
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 16
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 08:00:05.689157
+INFO:root:>> START PROGRAM: 2020-05-21 09:00:03.798410
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 9
+INFO:root: - Current data saved in CSV file
+ERROR:root: - Pyodbc error: ('22003', '[22003] [Microsoft][ODBC SQL Server Driver][SQL Server]Arithmetic overflow error converting numeric to data type numeric. (8115) (SQLExecDirectW)')
+INFO:root:>> END PROGRAM: 2020-05-21 09:00:06.267205
+INFO:root:>> START PROGRAM: 2020-05-21 10:00:03.400530
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 12
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-21 10:00:07.144111
