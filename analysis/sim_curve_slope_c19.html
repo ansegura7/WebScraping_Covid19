@@ -13232,63 +13232,63 @@ div#notebook {
       <td>...</td>
     </tr>
     <tr>
-      <th>20636</th>
+      <th>22127</th>
       <td>Vietnam</td>
       <td>Asia</td>
       <td>South-Eastern Asia</td>
-      <td>05/21/2020</td>
-      <td>324</td>
+      <td>05/28/2020</td>
+      <td>327</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>20637</th>
+      <th>22128</th>
       <td>Western Sahara</td>
       <td>Africa</td>
       <td>Northern Africa</td>
-      <td>05/21/2020</td>
-      <td>6</td>
-      <td>0</td>
+      <td>05/28/2020</td>
+      <td>9</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>20638</th>
+      <th>22129</th>
       <td>Yemen</td>
       <td>Asia</td>
       <td>Western Asia</td>
-      <td>05/21/2020</td>
-      <td>184</td>
-      <td>30</td>
+      <td>05/28/2020</td>
+      <td>256</td>
+      <td>53</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>20639</th>
+      <th>22130</th>
       <td>Zambia</td>
       <td>Africa</td>
       <td>Eastern Africa</td>
-      <td>05/21/2020</td>
-      <td>832</td>
+      <td>05/28/2020</td>
+      <td>1057</td>
       <td>7</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>20640</th>
+      <th>22131</th>
       <td>Zimbabwe</td>
       <td>Africa</td>
       <td>Eastern Africa</td>
-      <td>05/21/2020</td>
-      <td>48</td>
+      <td>05/28/2020</td>
+      <td>132</td>
       <td>4</td>
       <td>0</td>
       <td>0</td>
     </tr>
   </tbody>
 </table>
-<p>20641 rows × 8 columns</p>
+<p>22132 rows × 8 columns</p>
 </div>
 </div>
 
@@ -13356,9 +13356,9 @@ dtype: object</pre>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;today&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">)</span>
 <span class="n">min_total_cases</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="n">min_deaths</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="n">country_data</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[(</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">today</span><span class="p">)</span> 
-                        <span class="o">&amp;</span> <span class="p">(</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;total_cases&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">min_total_cases</span><span class="p">)</span>
-                        <span class="o">&amp;</span> <span class="p">(</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;total_deaths&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">min_deaths</span><span class="p">)]</span>
+<span class="n">country_data</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[(</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">today</span><span class="p">)</span> <span class="o">&amp;</span>
+                        <span class="p">(</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;total_cases&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">min_total_cases</span><span class="p">)</span> <span class="o">&amp;</span>
+                        <span class="p">(</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;total_deaths&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">min_deaths</span><span class="p">)]</span>
 <span class="n">country_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">country_data</span><span class="o">.</span><span class="n">country</span><span class="p">,</span> <span class="n">country_data</span><span class="o">.</span><span class="n">region</span><span class="p">))</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">country_dict</span><span class="p">)</span>
 </pre></div>
@@ -13379,7 +13379,7 @@ dtype: object</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>77</pre>
+<pre>80</pre>
 </div>
 
 </div>
@@ -13400,9 +13400,52 @@ dtype: object</pre>
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the curve slope of each country</span>
+<span class="k">def</span> <span class="nf">calc_curve_slope</span><span class="p">(</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">country_list</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">top_date</span><span class="p">,</span> <span class="n">norm</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">curve_slope</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">country_list</span><span class="p">:</span>
+        
+        <span class="c1"># Filter data by country</span>
+        <span class="n">country_fulldata</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">country</span><span class="p">]</span>
+        <span class="n">country_data</span> <span class="o">=</span> <span class="n">country_fulldata</span><span class="p">[</span><span class="n">country_fulldata</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">top_date</span><span class="p">]</span>
+        
+        <span class="c1"># Get x and y values</span>
+        <span class="n">y_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">country_data</span><span class="p">[</span><span class="n">var_name</span><span class="p">])</span>
+        <span class="n">x_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_values</span><span class="p">))</span>
+        
+        <span class="c1"># Normalize curves</span>
+        <span class="k">if</span> <span class="n">norm</span><span class="p">:</span>
+            <span class="n">y_max</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">country_fulldata</span><span class="p">[</span><span class="n">var_name</span><span class="p">]))</span>
+            <span class="k">if</span> <span class="n">y_max</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">y_values</span> <span class="o">=</span> <span class="n">y_values</span> <span class="o">/</span> <span class="n">y_max</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error with country </span><span class="si">%s</span><span class="s1">, max value is zero for </span><span class="si">%s</span><span class="s1">.&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">var_name</span><span class="p">))</span>
+        
+        <span class="c1"># Calculate curve slope</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">x_values</span> <span class="o">-</span> <span class="n">x_values</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="n">Y</span> <span class="o">=</span> <span class="n">y_values</span> <span class="o">-</span> <span class="n">y_values</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="n">slope</span> <span class="o">=</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">Y</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+        
+        <span class="n">curve_slope</span><span class="p">[</span><span class="n">country</span><span class="p">]</span> <span class="o">=</span> <span class="n">slope</span>
+    
+    <span class="k">return</span> <span class="n">curve_slope</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filtering data</span>
 <span class="n">x_var_name</span> <span class="o">=</span> <span class="s2">&quot;total_cases&quot;</span>
 <span class="n">y_var_name</span> <span class="o">=</span> <span class="s2">&quot;total_deaths&quot;</span>
+<span class="n">norm</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="n">last_days</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">top_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">last_days</span><span class="p">)</span>
 <span class="n">top_date</span>
@@ -13418,50 +13461,17 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime(2020, 5, 14, 9, 33, 48, 683704)</pre>
+<pre>datetime.datetime(2020, 5, 21, 10, 19, 4, 846649)</pre>
 </div>
 
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the curve slope of each country</span>
-<span class="k">def</span> <span class="nf">calc_curve_slope</span><span class="p">(</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">country_list</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">top_date</span><span class="p">):</span>
-    <span class="n">curve_slope</span> <span class="o">=</span> <span class="p">{}</span>
-
-    <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">country_list</span><span class="p">:</span>
-        
-        <span class="c1"># Filter data by country</span>
-        <span class="n">country_data</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[(</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">country</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">raw_data</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">top_date</span><span class="p">)]</span>
-
-        <span class="c1"># Get x and y values</span>
-        <span class="n">y_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">country_data</span><span class="p">[</span><span class="n">var_name</span><span class="p">])</span>
-        <span class="n">x_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_values</span><span class="p">))</span>
-
-        <span class="c1"># Calculate curve slope</span>
-        <span class="n">X</span> <span class="o">=</span> <span class="n">x_values</span> <span class="o">-</span> <span class="n">x_values</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-        <span class="n">Y</span> <span class="o">=</span> <span class="n">y_values</span> <span class="o">-</span> <span class="n">y_values</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-        <span class="n">slope</span> <span class="o">=</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">Y</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
-
-        <span class="n">curve_slope</span><span class="p">[</span><span class="n">country</span><span class="p">]</span> <span class="o">=</span> <span class="n">slope</span>
-    
-    <span class="k">return</span> <span class="n">curve_slope</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
@@ -13472,8 +13482,8 @@ dtype: object</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate X and Y slope by country</span>
-<span class="n">x_data_slope</span> <span class="o">=</span> <span class="n">calc_curve_slope</span><span class="p">(</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">country_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">x_var_name</span><span class="p">,</span> <span class="n">top_date</span><span class="p">)</span>
-<span class="n">y_data_slope</span> <span class="o">=</span> <span class="n">calc_curve_slope</span><span class="p">(</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">country_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">y_var_name</span><span class="p">,</span> <span class="n">top_date</span><span class="p">)</span>
+<span class="n">x_data_slope</span> <span class="o">=</span> <span class="n">calc_curve_slope</span><span class="p">(</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">country_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">x_var_name</span><span class="p">,</span> <span class="n">top_date</span><span class="p">,</span> <span class="n">norm</span><span class="p">)</span>
+<span class="n">y_data_slope</span> <span class="o">=</span> <span class="n">calc_curve_slope</span><span class="p">(</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">country_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">y_var_name</span><span class="p">,</span> <span class="n">top_date</span><span class="p">,</span> <span class="n">norm</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13529,16 +13539,16 @@ dtype: object</pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>country, curve_slope
-USA, 19088.321428571428
-Brazil, 13203.392857142857
-Russia, 8182.107142857143
-India, 4697.071428571428
-Peru, 3455.1071428571427
-Chile, 2585.75
-Saudi Arabia, 2366.6785714285716
-Mexico, 2096.8928571428573
-UK, 2004.75
-Iran, 1873.607142857143
+USA, 18238.0
+Brazil, 14543.82142857143
+Russia, 8759.5
+India, 6089.464285714285
+Peru, 4382.678571428572
+Chile, 3712.3928571428573
+Mexico, 2741.5
+UK, 2320.535714285714
+Saudi Arabia, 2083.0
+Iran, 2019.3214285714287
 </pre>
 </div>
 </div>
@@ -13587,16 +13597,16 @@ Iran, 1873.607142857143
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>country, curve_slope
-USA, 1134.9285714285713
-Brazil, 718.75
-UK, 296.39285714285717
-Mexico, 233.85714285714286
-Italy, 126.96428571428571
-India, 123.03571428571429
-Peru, 113.0
-Russia, 97.78571428571429
-France, 97.75
-Canada, 80.03571428571429
+Brazil, 809.0714285714286
+USA, 782.9642857142857
+Mexico, 300.0
+UK, 179.5
+India, 148.35714285714286
+Russia, 146.60714285714286
+Peru, 134.60714285714286
+Canada, 95.78571428571429
+Italy, 79.0
+France, 57.57142857142857
 </pre>
 </div>
 </div>
@@ -13640,7 +13650,7 @@ Canada, 80.03571428571429
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(162.10714285714286, 5.142857142857143)</pre>
+<pre>(208.48214285714283, 5.839285714285714)</pre>
 </div>
 
 </div>
@@ -13658,8 +13668,8 @@ Canada, 80.03571428571429
 <span class="k">for</span> <span class="n">country</span><span class="p">,</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">country_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">x_data_slope</span><span class="p">[</span><span class="n">country</span><span class="p">]</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">y_data_slope</span><span class="p">[</span><span class="n">country</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">,</span><span class="si">%s</span><span class="s2">,</span><span class="si">%.2f</span><span class="s2">,</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">norm</span> <span class="ow">or</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">,</span><span class="si">%s</span><span class="s2">,</span><span class="si">%.4f</span><span class="s2">,</span><span class="si">%.4f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13676,81 +13686,83 @@ Canada, 80.03571428571429
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Afghanistan,Asia,383.96,5.32
-Algeria,Africa,162.11,5.75
-Argentina,Americas,325.32,8.61
-Armenia,Asia,222.36,2.61
-Australia,Oceania,8.46,0.39
-Austria,Europe,39.82,0.93
-Bangladesh,Asia,1227.07,16.07
-Belarus,Europe,837.00,4.18
-Belgium,Europe,232.71,32.82
-Bolivia,Americas,235.89,6.89
-Bosnia and Herzegovina,Europe,17.11,1.39
-Brazil,Americas,13203.39,718.75
-Bulgaria,Europe,26.57,2.43
-Cameroon,Africa,127.29,1.07
-Canada,Americas,973.32,80.04
-Chile,Americas,2585.75,26.96
-China,Asia,4.61,0.18
-Colombia,Americas,616.79,15.25
-Croatia,Europe,2.21,0.21
-Czechia,Europe,58.89,1.68
-Denmark,Europe,57.61,2.75
-Dominican Republic,Americas,316.32,4.11
-DRC,Africa,72.32,1.18
-Ecuador,Americas,546.86,49.46
-Egypt,Africa,545.64,15.32
-Estonia,Europe,5.32,0.21
-Finland,Europe,36.11,1.79
-France,Europe,423.82,97.75
-Germany,Europe,508.57,51.32
-Greece,Europe,6.71,1.00
-Honduras,Americas,91.93,2.21
-Hungary,Europe,30.00,5.14
-India,Asia,4697.07,123.04
-Indonesia,Asia,478.18,31.32
-Iran,Asia,1873.61,52.36
-Iraq,Asia,97.43,3.04
-Ireland,Europe,62.50,9.04
-Israel,Asia,14.07,2.39
-Italy,Europe,603.89,126.96
-Japan,Asia,29.79,9.82
-Kenya,Africa,43.50,0.54
-Kuwait,Asia,841.79,4.54
-Lithuania,Europe,9.61,1.14
-Luxembourg,Europe,8.54,0.96
-Malaysia,Asia,29.29,0.32
-Mexico,Americas,2096.89,233.86
-Moldova,Europe,140.79,4.64
-Morocco,Africa,85.00,0.61
-Netherlands,Europe,132.36,18.07
-Nigeria,Africa,222.68,5.18
-North Macedonia,Europe,21.18,2.43
-Norway,Europe,10.43,0.39
-Pakistan,Asia,1305.86,27.11
-Panama,Americas,123.00,3.75
-Peru,Americas,3455.11,113.00
-Philippines,Asia,201.82,6.11
-Poland,Europe,316.86,10.07
-Portugal,Europe,190.25,13.14
-Romania,Europe,162.00,13.11
-Russia,Europe,8182.11,97.79
-S. Korea,Asia,15.86,0.36
-Saudi Arabia,Asia,2366.68,8.29
-Serbia,Europe,70.79,1.71
-Slovenia,Europe,0.57,0.36
-Somalia,Africa,49.29,1.39
-South Africa,Africa,800.64,17.14
-Spain,Europe,806.89,73.75
-Sudan,Africa,128.89,3.64
-Sweden,Europe,403.43,33.32
-Switzerland,Europe,22.68,2.79
-Turkey,Asia,1057.50,29.00
-UAE,Asia,749.21,4.07
-UK,Europe,2004.75,296.39
-Ukraine,Europe,322.46,15.43
-USA,Americas,19088.32,1134.93
+<pre>Afghanistan,Asia,629.4643,4.0714
+Algeria,Africa,167.7143,7.2143
+Argentina,Americas,577.2857,12.2500
+Armenia,Asia,376.7500,6.0357
+Australia,Oceania,7.9643,0.2143
+Austria,Europe,30.0000,4.0714
+Azerbaijan,Asia,128.2857,1.3214
+Bangladesh,Asia,1639.8929,21.6786
+Belarus,Europe,926.7857,4.8571
+Belgium,Europe,212.1786,29.8571
+Bolivia,Americas,398.0714,9.0714
+Bosnia and Herzegovina,Europe,13.3214,2.1786
+Brazil,Americas,14543.8214,809.0714
+Bulgaria,Europe,15.5357,1.4643
+Cameroon,Africa,204.5000,3.2143
+Canada,Americas,928.9286,95.7857
+Chile,Americas,3712.3929,37.7500
+Colombia,Americas,878.6071,21.7143
+Croatia,Europe,0.2857,0.5357
+Cuba,Americas,11.0357,0.1786
+Czechia,Europe,48.4643,0.8214
+Denmark,Europe,46.2857,1.0714
+Dominican Republic,Americas,295.2500,3.4286
+DRC,Africa,123.1786,1.1786
+Ecuador,Americas,396.9286,39.6429
+Egypt,Africa,694.1786,18.6429
+Estonia,Europe,6.4643,0.3929
+Finland,Europe,32.6786,1.4286
+France,Europe,111.0000,57.5714
+Germany,Europe,431.7500,37.4643
+Greece,Europe,5.5357,0.6429
+Guatemala,Americas,247.0714,2.9286
+Honduras,Americas,204.7857,4.6071
+Hungary,Europe,21.5714,5.6429
+India,Asia,6089.4643,148.3571
+Indonesia,Asia,583.2857,28.5714
+Iran,Asia,2019.3214,52.9286
+Iraq,Asia,235.1429,5.3929
+Ireland,Europe,51.0357,6.3571
+Israel,Asia,19.9643,0.4286
+Italy,Europe,420.1429,79.0000
+Japan,Asia,25.6071,11.1429
+Kenya,Africa,73.6786,1.2500
+Kuwait,Asia,732.9643,7.5357
+Lithuania,Europe,8.3571,1.0357
+Luxembourg,Europe,3.0357,0.1786
+Mali,Africa,24.6429,1.5357
+Mexico,Americas,2741.5000,300.0000
+Moldova,Europe,140.4286,7.7143
+Morocco,Africa,51.6429,0.9286
+Netherlands,Europe,176.2857,17.8214
+Nigeria,Africa,261.9643,6.7143
+North Macedonia,Europe,25.0000,1.5000
+Norway,Europe,12.9643,0.1071
+Pakistan,Asia,1718.9643,31.8214
+Panama,Americas,257.3571,3.5357
+Peru,Americas,4382.6786,134.6071
+Philippines,Asia,326.8214,10.4286
+Poland,Europe,349.1071,8.6429
+Portugal,Europe,221.9286,13.3571
+Romania,Europe,181.0714,11.7143
+Russia,Europe,8759.5000,146.6071
+S. Korea,Asia,32.2857,0.6071
+Saudi Arabia,Asia,2083.0000,12.2857
+Serbia,Europe,45.0714,0.6071
+Slovenia,Europe,0.7857,0.3929
+Somalia,Africa,28.6429,1.2857
+South Africa,Africa,1010.8929,30.3571
+Sudan,Africa,160.5714,9.8929
+Sweden,Europe,483.3929,57.3571
+Switzerland,Europe,14.0714,2.8929
+Thailand,Asia,4.1786,0.2143
+Turkey,Asia,930.2857,27.4286
+UAE,Asia,787.5357,2.8929
+UK,Europe,2320.5357,179.5000
+Ukraine,Europe,355.3571,13.4286
+USA,Americas,18238.0000,782.9643
 </pre>
 </div>
 </div>
