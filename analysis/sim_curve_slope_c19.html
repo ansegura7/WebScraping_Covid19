@@ -13446,7 +13446,7 @@ dtype: object</pre>
 <span class="n">x_var_name</span> <span class="o">=</span> <span class="s2">&quot;total_cases&quot;</span>
 <span class="n">y_var_name</span> <span class="o">=</span> <span class="s2">&quot;total_deaths&quot;</span>
 <span class="n">norm</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">last_days</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">last_days</span> <span class="o">=</span> <span class="mi">15</span>
 <span class="n">top_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">last_days</span><span class="p">)</span>
 <span class="n">top_date</span>
 </pre></div>
@@ -13467,7 +13467,7 @@ dtype: object</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime(2020, 5, 21, 10, 19, 4, 846649)</pre>
+<pre>datetime.datetime(2020, 5, 13, 11, 12, 3, 678732)</pre>
 </div>
 
 </div>
@@ -13539,16 +13539,16 @@ dtype: object</pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>country, curve_slope
-USA, 18238.0
-Brazil, 14543.82142857143
-Russia, 8759.5
-India, 6089.464285714285
-Peru, 4382.678571428572
-Chile, 3712.3928571428573
-Mexico, 2741.5
-UK, 2320.535714285714
-Saudi Arabia, 2083.0
-Iran, 2019.3214285714287
+USA, 21711.864285714284
+Brazil, 16132.3
+Russia, 9013.903571428571
+India, 6026.303571428572
+Peru, 4084.782142857143
+Chile, 3636.8892857142855
+Mexico, 2680.285714285714
+UK, 2472.589285714286
+Saudi Arabia, 2444.8464285714285
+Iran, 2117.1892857142857
 </pre>
 </div>
 </div>
@@ -13597,16 +13597,16 @@ Iran, 2019.3214285714287
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>country, curve_slope
-Brazil, 809.0714285714286
-USA, 782.9642857142857
-Mexico, 300.0
-UK, 179.5
-India, 148.35714285714286
-Russia, 146.60714285714286
-Peru, 134.60714285714286
-Canada, 95.78571428571429
-Italy, 79.0
-France, 57.57142857142857
+USA, 1114.825
+Brazil, 888.6857142857143
+Mexico, 311.42857142857144
+UK, 291.7964285714286
+India, 145.7357142857143
+Russia, 129.83214285714286
+Peru, 124.80714285714286
+Italy, 122.45714285714286
+Canada, 97.17857142857143
+France, 77.075
 </pre>
 </div>
 </div>
@@ -13650,7 +13650,7 @@ France, 57.57142857142857
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(208.48214285714283, 5.839285714285714)</pre>
+<pre>(198.72321428571428, 5.601785714285715)</pre>
 </div>
 
 </div>
@@ -13665,6 +13665,7 @@ France, 57.57142857142857
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Showing data</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;country,region,</span><span class="si">%s</span><span class="s1">,</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x_var_name</span><span class="p">,</span> <span class="n">y_var_name</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">country</span><span class="p">,</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">country_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">x_data_slope</span><span class="p">[</span><span class="n">country</span><span class="p">]</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">y_data_slope</span><span class="p">[</span><span class="n">country</span><span class="p">]</span>
@@ -13686,83 +13687,86 @@ France, 57.57142857142857
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Afghanistan,Asia,629.4643,4.0714
-Algeria,Africa,167.7143,7.2143
-Argentina,Americas,577.2857,12.2500
-Armenia,Asia,376.7500,6.0357
-Australia,Oceania,7.9643,0.2143
-Austria,Europe,30.0000,4.0714
-Azerbaijan,Asia,128.2857,1.3214
-Bangladesh,Asia,1639.8929,21.6786
-Belarus,Europe,926.7857,4.8571
-Belgium,Europe,212.1786,29.8571
-Bolivia,Americas,398.0714,9.0714
-Bosnia and Herzegovina,Europe,13.3214,2.1786
-Brazil,Americas,14543.8214,809.0714
-Bulgaria,Europe,15.5357,1.4643
-Cameroon,Africa,204.5000,3.2143
-Canada,Americas,928.9286,95.7857
-Chile,Americas,3712.3929,37.7500
-Colombia,Americas,878.6071,21.7143
-Croatia,Europe,0.2857,0.5357
-Cuba,Americas,11.0357,0.1786
-Czechia,Europe,48.4643,0.8214
-Denmark,Europe,46.2857,1.0714
-Dominican Republic,Americas,295.2500,3.4286
-DRC,Africa,123.1786,1.1786
-Ecuador,Americas,396.9286,39.6429
-Egypt,Africa,694.1786,18.6429
-Estonia,Europe,6.4643,0.3929
-Finland,Europe,32.6786,1.4286
-France,Europe,111.0000,57.5714
-Germany,Europe,431.7500,37.4643
-Greece,Europe,5.5357,0.6429
-Guatemala,Americas,247.0714,2.9286
-Honduras,Americas,204.7857,4.6071
-Hungary,Europe,21.5714,5.6429
-India,Asia,6089.4643,148.3571
-Indonesia,Asia,583.2857,28.5714
-Iran,Asia,2019.3214,52.9286
-Iraq,Asia,235.1429,5.3929
-Ireland,Europe,51.0357,6.3571
-Israel,Asia,19.9643,0.4286
-Italy,Europe,420.1429,79.0000
-Japan,Asia,25.6071,11.1429
-Kenya,Africa,73.6786,1.2500
-Kuwait,Asia,732.9643,7.5357
-Lithuania,Europe,8.3571,1.0357
-Luxembourg,Europe,3.0357,0.1786
-Mali,Africa,24.6429,1.5357
-Mexico,Americas,2741.5000,300.0000
-Moldova,Europe,140.4286,7.7143
-Morocco,Africa,51.6429,0.9286
-Netherlands,Europe,176.2857,17.8214
-Nigeria,Africa,261.9643,6.7143
-North Macedonia,Europe,25.0000,1.5000
-Norway,Europe,12.9643,0.1071
-Pakistan,Asia,1718.9643,31.8214
-Panama,Americas,257.3571,3.5357
-Peru,Americas,4382.6786,134.6071
-Philippines,Asia,326.8214,10.4286
-Poland,Europe,349.1071,8.6429
-Portugal,Europe,221.9286,13.3571
-Romania,Europe,181.0714,11.7143
-Russia,Europe,8759.5000,146.6071
-S. Korea,Asia,32.2857,0.6071
-Saudi Arabia,Asia,2083.0000,12.2857
-Serbia,Europe,45.0714,0.6071
-Slovenia,Europe,0.7857,0.3929
-Somalia,Africa,28.6429,1.2857
-South Africa,Africa,1010.8929,30.3571
-Sudan,Africa,160.5714,9.8929
-Sweden,Europe,483.3929,57.3571
-Switzerland,Europe,14.0714,2.8929
-Thailand,Asia,4.1786,0.2143
-Turkey,Asia,930.2857,27.4286
-UAE,Asia,787.5357,2.8929
-UK,Europe,2320.5357,179.5000
-Ukraine,Europe,355.3571,13.4286
-USA,Americas,18238.0000,782.9643
+<pre>country,region,total_cases,total_deaths
+Afghanistan,Asia,541.6750,6.5214
+Algeria,Africa,181.2571,7.1786
+Argentina,Americas,533.0036,11.5179
+Armenia,Asia,313.3000,3.9464
+Australia,Oceania,10.0536,0.4179
+Austria,Europe,39.1607,2.0107
+Azerbaijan,Asia,129.8500,1.5321
+Bangladesh,Asia,1565.0607,20.5107
+Belarus,Europe,935.8964,4.8321
+Belgium,Europe,251.2786,33.6786
+Bolivia,Americas,335.1857,10.4857
+Bosnia and Herzegovina,Europe,16.3429,1.9964
+Brazil,Americas,16132.3000,888.6857
+Bulgaria,Europe,27.6893,2.6464
+Cameroon,Africa,202.3107,3.0821
+Canada,Americas,1067.6107,97.1786
+Chile,Americas,3636.8893,37.9964
+China,Asia,4.4179,0.0643
+Colombia,Americas,790.3643,21.0821
+Croatia,Europe,1.9679,0.5821
+Cuba,Americas,10.5857,0.2893
+Czechia,Europe,58.3179,2.0500
+Denmark,Europe,57.8429,2.2071
+Dominican Republic,Americas,332.4429,4.2321
+DRC,Africa,101.2036,1.1143
+Ecuador,Americas,526.3750,59.6321
+Egypt,Africa,684.7929,18.3286
+Estonia,Europe,6.4464,0.2286
+Finland,Europe,38.2750,1.6071
+France,Europe,322.3214,77.0750
+Germany,Europe,513.4821,44.9107
+Greece,Europe,8.1750,1.1964
+Guatemala,Americas,208.3464,2.9893
+Honduras,Americas,180.4857,5.1393
+Hungary,Europe,31.4214,5.0429
+India,Asia,6026.3036,145.7357
+Indonesia,Asia,629.9500,32.3464
+Iran,Asia,2117.1893,56.3107
+Iraq,Asia,160.7464,4.8214
+Ireland,Europe,70.9393,8.9464
+Israel,Asia,15.7071,1.1214
+Italy,Europe,593.4214,122.4571
+Japan,Asia,38.2857,11.6571
+Kenya,Africa,56.5786,0.6893
+Kuwait,Asia,878.4393,6.6857
+Lithuania,Europe,10.7964,0.9536
+Luxembourg,Europe,6.5893,0.4857
+Malaysia,Asia,62.3571,0.2357
+Mali,Africa,24.8536,1.9571
+Mexico,Americas,2680.2857,311.4286
+Moldova,Europe,148.6643,6.0643
+Morocco,Africa,79.0464,0.9714
+Netherlands,Europe,176.7893,20.3750
+Nigeria,Africa,266.3286,6.6429
+North Macedonia,Europe,25.3929,1.7679
+Norway,Europe,15.1643,0.3000
+Pakistan,Asia,1778.0750,33.7000
+Panama,Americas,195.1357,4.1571
+Peru,Americas,4084.7821,124.8071
+Philippines,Asia,245.6179,7.9429
+Poland,Europe,379.4071,10.6214
+Portugal,Europe,228.7357,13.6607
+Romania,Europe,177.7929,12.4357
+Russia,Europe,9013.9036,129.8321
+S. Korea,Asia,22.9500,0.6571
+Saudi Arabia,Asia,2444.8464,11.1857
+Serbia,Europe,70.6429,1.1821
+Slovenia,Europe,0.4964,0.4143
+Somalia,Africa,33.1250,1.0643
+South Africa,Africa,991.6679,24.6000
+Sudan,Africa,188.9214,8.1500
+Sweden,Europe,497.2357,49.1071
+Switzerland,Europe,22.0143,3.4643
+Thailand,Asia,2.5107,0.0786
+Turkey,Asia,1075.4429,30.0857
+UAE,Asia,843.2500,3.6857
+UK,Europe,2472.5893,291.7964
+Ukraine,Europe,385.9893,14.7786
+USA,Americas,21711.8643,1114.8250
 </pre>
 </div>
 </div>
