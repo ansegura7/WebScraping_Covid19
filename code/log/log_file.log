@@ -7881,3 +7881,189 @@ INFO:root: - Data stored in the database: 18
 INFO:root: - Current data saved in CSV file
 INFO:root: - Historical data saved in CSV file
 INFO:root:>> END PROGRAM: 2020-05-28 12:00:07.476396
+INFO:root:>> START PROGRAM: 2020-05-28 13:00:03.705900
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 17
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-28 13:00:08.674395
+INFO:root:>> START PROGRAM: 2020-05-28 14:00:03.711484
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 15
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-28 14:00:07.018676
+INFO:root:>> START PROGRAM: 2020-05-28 15:00:03.583520
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 16
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-28 15:00:13.223852
+INFO:root:>> START PROGRAM: 2020-05-28 16:00:03.571117
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 10
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-28 16:00:06.789871
+INFO:root:>> START PROGRAM: 2020-05-28 17:00:03.201360
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 5
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-28 17:00:05.935737
+INFO:root:>> START PROGRAM: 2020-05-28 18:00:03.362951
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-28 18:00:03.977400
+INFO:root:>> START PROGRAM: 2020-05-28 19:00:03.179468
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-28 19:00:03.549181
+INFO:root:>> START PROGRAM: 2020-05-28 20:00:03.224276
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-28 20:00:03.682441
+INFO:root:>> START PROGRAM: 2020-05-28 21:00:03.217881
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-28 21:00:03.676121
+INFO:root:>> START PROGRAM: 2020-05-28 22:00:03.315727
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-28 22:00:03.804971
+INFO:root:>> START PROGRAM: 2020-05-28 23:00:03.194565
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-28 23:00:03.652566
+INFO:root:>> START PROGRAM: 2020-05-29 00:00:02.685546
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 00:00:03.107420
+INFO:root:>> START PROGRAM: 2020-05-29 01:00:03.349592
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 01:00:03.931571
+INFO:root:>> START PROGRAM: 2020-05-29 02:00:03.405303
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 02:00:03.957246
+INFO:root:>> START PROGRAM: 2020-05-29 03:00:03.248043
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 03:00:03.643504
+INFO:root:>> START PROGRAM: 2020-05-29 04:00:02.273109
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 04:00:02.731159
+INFO:root:>> START PROGRAM: 2020-05-29 05:00:03.286469
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 05:00:03.770504
+INFO:root:>> START PROGRAM: 2020-05-29 06:00:03.367806
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 06:00:03.857165
+INFO:root:>> START PROGRAM: 2020-05-29 07:00:03.220142
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 07:00:03.626416
+INFO:root:>> START PROGRAM: 2020-05-29 08:00:03.311662
+ERROR:root: - Server down or incorrect domain
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-05-29 08:00:03.755139
+INFO:root:>> START PROGRAM: 2020-05-29 08:52:06.835278
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 140
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 08:52:10.882158
+INFO:root:>> START PROGRAM: 2020-05-29 09:00:03.724131
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 3
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 09:00:07.082717
+INFO:root:>> START PROGRAM: 2020-05-29 10:00:03.218613
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 15
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 10:00:14.728989
+INFO:root:>> START PROGRAM: 2020-05-29 11:00:03.262844
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 19
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 11:00:06.247215
+INFO:root:>> START PROGRAM: 2020-05-29 12:00:02.836690
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 12
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 12:00:06.604518
+INFO:root:>> START PROGRAM: 2020-05-29 13:00:02.313616
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 12
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 13:00:07.228079
+INFO:root:>> START PROGRAM: 2020-05-29 14:00:02.224400
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 11
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 14:00:05.078995
+INFO:root:>> START PROGRAM: 2020-05-29 15:00:03.044736
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 8
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 15:00:07.082085
+INFO:root:>> START PROGRAM: 2020-05-29 16:00:03.595901
+INFO:root: - The document was read
+INFO:root: - Getting data
+INFO:root: - The data was found
+INFO:root: - Total data: 213
+INFO:root: - Data stored in the database: 8
+INFO:root: - Current data saved in CSV file
+INFO:root: - Historical data saved in CSV file
+INFO:root:>> END PROGRAM: 2020-05-29 16:00:07.830991
