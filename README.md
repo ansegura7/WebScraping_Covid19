@@ -57,42 +57,44 @@ And <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DD
 The project was carried out with the latest version of <a href="https://www.anaconda.com/distribution/" target="_blank" >Anaconda</a> on Windows.
 
 If the main Web Scraping libraries do not come with the selected Anaconda distribution, you can install them with the following commands:
+
 ``` console
-  conda install -c anaconda beautifulsoup4
-  conda install -c conda-forge selenium
+conda install -c anaconda pyodbc
+conda install -c anaconda beautifulsoup4
+conda install -c conda-forge selenium
 ```
 
 The specific Python 3.7.x libraries used are:
 
 ``` python
-  # Import custom libraries
-  import util_lib as ul
+# Import custom libraries
+import util_lib as ul
 
-  # Import util libraries
-  import logging
-  import pytz
-  from pytz import timezone
-  from datetime import datetime
+# Import util libraries
+import logging
+import pytz
+from pytz import timezone
+from datetime import datetime
 
-  # Email libraries
-  import smtplib
-  import ssl
-  from email.mime.multipart import MIMEMultipart
-  from email.mime.text import MIMEText
+# Email libraries
+import smtplib
+import ssl
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
-  # Database libraries
-  import pyodbc
+# Database libraries
+import pyodbc
 
-  # Import Web Scraping libraries
-  from urllib.request import urlopen
-  from urllib.request import Request
-  from urllib.error import HTTPError
-  from urllib.error import URLError
-  from bs4 import BeautifulSoup
-  
-  # Import Web Scraping 2 libraries
-  from selenium import webdriver
-  from selenium.webdriver.chrome.options import Options
+# Import Web Scraping libraries
+from urllib.request import urlopen
+from urllib.request import Request
+from urllib.error import HTTPError
+from urllib.error import URLError
+from bs4 import BeautifulSoup
+
+# Import Web Scraping 2 libraries
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 ```
 
 **Note:**  In order to use the *web scraper* that fetches historical data, you may need to download the <a href="https://chromedriver.chromium.org/downloads" target="_blank" >Chrome driver</a> that uses the Selenium library and put it in the *driver* folder.
