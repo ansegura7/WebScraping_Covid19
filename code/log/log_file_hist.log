@@ -1140,3 +1140,7 @@ INFO:root:>> START PROGRAM: 2020-05-06 10:33:31.498864
 INFO:root: - The browser was created
 INFO:root: - No data to save
 INFO:root:>> END PROGRAM: 2020-05-06 10:33:33.995796
+INFO:root:>> START PROGRAM: 2020-06-23 08:00:18.812105
+ERROR:root: - Error: Message: session not created: This version of ChromeDriver only supports Chrome version 81
+INFO:root: - No data to save
+INFO:root:>> END PROGRAM: 2020-06-23 08:00:24.044634
