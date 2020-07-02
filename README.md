@@ -53,6 +53,12 @@ The latest data reported by country can be seen at the following <a href="https:
 
 And <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DDL%20-%20Create%20Table%20Main%20Data.sql" target="_blank" >here</a>, you can find the definition of the table where the scraped data is stored.
 
+## Analysis
+1. <a href="https://ansegura7.github.io/WebScraping_Covid19/analysis/pca_data_analysis_c19.html" >PCA Data Analysis</a>
+2. <a href="https://ansegura7.github.io/WebScraping_Covid19/analysis/curve_similarity_c19_cases.html" >Curve Similarity Analysis - Cases</a>
+3. <a href="https://ansegura7.github.io/WebScraping_Covid19/analysis/curve_similarity_c19_deaths.html" >Curve Similarity Analysis - Deaths</a>
+4. <a href="https://ansegura7.github.io/WebScraping_Covid19/analysis/sim_curve_slope_c19.html" >Similarity of the Curve Slopes</a>
+
 ## Dependencies
 The project was carried out with the latest version of <a href="https://www.anaconda.com/distribution/" target="_blank" >Anaconda</a> on Windows.
 
