@@ -8,6 +8,9 @@ if (chart_data1.x_data.length == chart_data2.x_data.length) {
 	let n = chart_data1.x_data.length;
 	console.log('date,total_cases,total_deaths')
 	for (i=0; i<n; i++) {
-		console.log(chart_data1.x_data[i] + '/2020,' + chart_data1.y_data[i] + ',' + chart_data2.y_data[i]);
+		tokens = chart_data1.x_data[i].split(' ');
+		curr_month = ("JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(tokens[0]) / 3 + 1);
+		curr_day = tokens[1];
+		console.log(curr_month + '/'  + curr_day + '/2020,' + chart_data1.y_data[i] + ',' + chart_data2.y_data[i]);
 	}
 }
