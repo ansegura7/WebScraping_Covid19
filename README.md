@@ -49,7 +49,7 @@ Furthermore, to carry out the complete data analysis and its respective visualiz
 | new_total_deaths | New daily deaths | total_deaths_today - total_deaths_yest |
 | new_active_cases | New daily active cases | active_cases_today - active_cases_yest |
 
-You can find the definition of the table where the scraped data is stored <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DDL%20-%20Create%20Table%20Main%20Data.sql" target="_blank" >here</a>.
+You can find the scripts with which the tables were created in SQL Server <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DDL" target="_blank" >here</a>.
 
 World COVID-19 data was collected over 253 days. The latest data reported by country can be seen at the following <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/data/current_data.csv" target="_blank" >link</a>
 
