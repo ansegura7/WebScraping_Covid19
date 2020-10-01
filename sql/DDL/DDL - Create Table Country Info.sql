@@ -21,7 +21,7 @@ CREATE TABLE [dbo].[country_info](
 	[alpha3_code] [nvarchar](50) NULL,
 	[calling_codes] [nvarchar](50) NULL,
 	[capital] [nvarchar](100) NULL,
-	[alt_spellings] [nvarchar](250) NULL,
+	[alt_spellings] [nvarchar](200) NULL,
 	[region] [nvarchar](50) NULL,
 	[subregion] [nvarchar](50) NULL,
 	[population] [int] NULL,
@@ -30,8 +30,8 @@ CREATE TABLE [dbo].[country_info](
 	[demonym] [nvarchar](50) NULL,
 	[area] [float] NULL,
 	[gini] [float] NULL,
-	[timezones] [nvarchar](50) NULL,
-	[borders] [nvarchar](100) NULL,
+	[timezones] [nvarchar](200) NULL,
+	[borders] [nvarchar](200) NULL,
 	[native_name] [nvarchar](100) NULL,
 	[numeric_code] [int] NULL,
 	[currencies_code] [nvarchar](50) NULL,
@@ -43,7 +43,7 @@ CREATE TABLE [dbo].[country_info](
 	[lang_native_name] [nvarchar](50) NULL,
 	[flag] [nvarchar](50) NULL,
 	[cioc] [nvarchar](50) NULL,
-	[url] [nvarchar](250) NULL,
+	[url] [nvarchar](200) NULL,
  CONSTRAINT [PK_country_info] PRIMARY KEY CLUSTERED 
 (
 	[name] ASC
