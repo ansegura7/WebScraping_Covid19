@@ -1,4 +1,4 @@
-# Web Scraping - Covid19 Data
+# Web Scraping - COVID-19 Data
 Web scraping is the (generally automatic) process of collecting semi-structured data from the web, filtering and storing it, and then using it in another process.
 
 ## Table of Contents
@@ -14,13 +14,13 @@ Web scraping is the (generally automatic) process of collecting semi-structured 
 * [License](#License)
 
 ## Motivation
-Create a web scraper bot to obtain data on confirmed cases and deaths of Covid-19, in order to analyze them.
+Create a web scraper bot to obtain data on confirmed cases and deaths of COVID-19, in order to analyze them.
 
 ## Process
 1. Run the Web Scraper with Selenium to obtain the historical data. It only runs 1 time.
 2. Run the Web Scraper with BeautifulSoup to obtain daily data (every day every x hours).
 3. Export the historical daily data in a CSV file, to feed the dashboard in Power BI.
-4. Use the Covid 19 dashboard (built in Power BI) to analyze data and find insights.
+4. Use the COVID-19 dashboard (built in Power BI) to analyze data and find insights.
 
 ## Data
 The data obtained through web scraping are:
@@ -37,7 +37,7 @@ The data obtained through web scraping are:
 | tot_cases_1m_pop | Number of cases per one million population |
 | deaths_1m_pop | Number of deaths per one million population |
 | tests_1m_pop | Number of tests per one million population |
-| datestamp | Data timestamp with UTC -5 time zone |
+| datestamp | Data timestamp with UTC-5 time zone |
 
 Furthermore, to carry out the complete data analysis and its respective visualization, other variables had to be derived, such as:
 
@@ -49,9 +49,20 @@ Furthermore, to carry out the complete data analysis and its respective visualiz
 | new_total_deaths | New daily deaths | total_deaths_today - total_deaths_yest |
 | new_active_cases | New daily active cases | active_cases_today - active_cases_yest |
 
-The latest data reported by country can be seen at the following <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/data/current_data.csv" target="_blank" >link</a>.
+You can find the definition of the table where the scraped data is stored <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DDL%20-%20Create%20Table%20Main%20Data.sql" target="_blank" >here</a>.
 
-And <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/sql/DDL%20-%20Create%20Table%20Main%20Data.sql" target="_blank" >here</a>, you can find the definition of the table where the scraped data is stored.
+World COVID-19 data was collected over 253 days. The latest data reported by country can be seen at the following <a href="https://github.com/ansegura7/WebScraping_Covid19/blob/master/data/current_data.csv" target="_blank" >link</a>
+
+Below, some final statistics of the data updated until September 30 UTC+0:
+
+| Variable           | Value       |
+| ---                | --:         |
+| Final Date         | 9/30/2020   |
+| Countries infected | 213         |
+| Total Cases        | 34,134,840  |
+| Total Deaths       | 1,018,033   |
+| Active Cases       | 6,587,728   |
+| Total Tests        | 648,926,831 |
 
 ## Analysis
 1. <a href="https://ansegura7.github.io/WebScraping_Covid19/analysis/pca_data_analysis_c19.html" >PCA Data Analysis</a>
@@ -143,7 +154,7 @@ In order to automate the process, a Task can be created in the **Windows Task Sc
 ![task-sch-3-img](https://github.com/ansegura7/WebScraping_Covid19/blob/master/img/task-sch-3.PNG?raw=true)
 
 ## DataViz
-Next, the Covid 19 dashboard that was created to visually analyze the collected data.
+Next, the COVID-19 dashboard that was created to visually analyze the collected data.
 
 ![dataviz-img](https://github.com/ansegura7/WebScraping_Covid19/blob/master/img/data-viz.gif?raw=true)
 
