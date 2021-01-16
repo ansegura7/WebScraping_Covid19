@@ -18,6 +18,6 @@ function extractData() {
 			result += cure_date + ',' + chart_data1.y_data[i] + ',' + chart_data2.y_data[i] + '\n';
 		}
 	}
-	console.log(result);
+	return result;
 }
 extractData();
