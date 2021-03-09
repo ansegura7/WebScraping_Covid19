@@ -12,7 +12,7 @@ function extractData() {
 		for (i = 0; i < n; i++) {
 			tokens = chart_data1.x_data[i].split(' ');
 			curr_month = ("JanFebMarAprMayJunJulAugSepOctNovDec".indexOf(tokens[0]) / 3 + 1);
-			curr_day = tokens[1];
+			curr_day = tokens[1].replace(',', '');
 			curr_date = curr_month + '/' + curr_day + '/2020';
 			new_cases = (i > 0 ? chart_data1.y_data[i] - curr_cases : 0);
 			new_deaths = (i > 0 ? chart_data2.y_data[i] - curr_deaths : 0);
@@ -24,4 +24,5 @@ function extractData() {
 	}
 	return result;
 }
+
 extractData();
